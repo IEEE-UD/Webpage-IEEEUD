@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://www.mmi.iut-tlse3.fr/ -->
+<html lang="en" class="js desktop"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="./MMI Castres - Le site du département MMI à Castres_files/analytics.js"></script><script async="" src="./MMI Castres - Le site du département MMI à Castres_files/js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-70842060-3');
+    </script>
+    
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./MMI Castres - Le site du département MMI à Castres_files/style.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="http://www.mmi.iut-tlse3.fr/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://www.mmi.iut-tlse3.fr/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://www.mmi.iut-tlse3.fr/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://www.mmi.iut-tlse3.fr/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://www.mmi.iut-tlse3.fr/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://www.mmi.iut-tlse3.fr/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://www.mmi.iut-tlse3.fr/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://www.mmi.iut-tlse3.fr/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://www.mmi.iut-tlse3.fr/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="http://www.mmi.iut-tlse3.fr/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://www.mmi.iut-tlse3.fr/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="http://www.mmi.iut-tlse3.fr/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://www.mmi.iut-tlse3.fr/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="http://www.mmi.iut-tlse3.fr/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>MMI Castres - Le site du département MMI à Castres</title>
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="MMI Castres">
+    <meta property="og:image" content="https://dev.studio-dot.fr/mmi/img/thumbnail.jpg">
+    <meta property="og:url" content="http://www.mmi.iut-tlse3.fr/">
+    <meta property="og:title" content="Le DUT Métiers du Multimédia et de l&#39;Internet (MMI).">
+    <meta name="description" content="MMI Castres">
+
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+    </script>
+<script>/**
+ * demo.js
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2018, Codrops
+ * http://www.codrops.com
+ */
+raf = window.setInterval(actualScroll, 25);
+var hauteurMaPage;
+var itemMaxScroll;
+var actualScroll = 0;
+var currentPixel = actualScroll;
+var myReq;
+
+//var previousScrollnumber;
+function actualScroll() {
+    //actualScroll = $('.vs-section').attr('style').split('-')[1];
+      // VAR POUR SKEW 
+    const nexPixel = actualScroll;
+    const diff = nexPixel - currentPixel;
+    const speed = diff * 0.10;
+
+    if ($('.vs-section').attr('style')) {
+        // SI SMOOTH INIT EN COURS
+        if ($('.vs-section').attr('style').split('(')[1] && mobile == false) {
+            // SI SMOOTH INIT OK & DESKTOP
+            var topScroll1 = $('.vs-section').attr('style').split('(')[1];
+            var topScroll2 = topScroll1.split('px')[0];
+            actualScroll = -topScroll2;
+
+            document.getElementById('deco1').style.transform = "translateX(" + (150 + Math.round(-actualScroll / 10)) + 'px)';
+            //            document.getElementById('deco1').style.left = (150 + Math.round(-actualScroll / 10)) + 'px';
+
+            document.getElementById('deco2').style.left = (750 + Math.round(-actualScroll / 12)) + 'px';
+            document.getElementById('deco3').style.left = (1650 + Math.round(-actualScroll / 8)) + 'px';
+            document.getElementById('deco4').style.left = (2250 + Math.round(-actualScroll / 6)) + 'px';
+            document.getElementById('deco5').style.left = (2750 + Math.round(-actualScroll / 8)) + 'px';
+            document.getElementById('deco6').style.left = (3350 + Math.round(-actualScroll / 10)) + 'px';
+            document.getElementById('deco7').style.left = (3950 + Math.round(-actualScroll / 10)) + 'px';
+
+            document.getElementById('deco1').style.left = (150 + Math.round(-actualScroll / 10)) + 'px';
+
+            //document.getElementById('cartes').style.transform = "translateX("+(150 + Math.round(-actualScroll / 10)) + 'px)';
+            //    document.getElementById('cartes').style.left = (150 + Math.round(-actualScroll / 10)) + 'px';
+
+
+            //SKEW INTRO ET CONTACT
+            document.getElementById('intro').style.transform = skewDirection + (-speed / 2) + "deg)";
+            document.getElementById('contact').style.transform = skewDirection + (-speed / 2) + "deg)";
+    document.getElementById('scrollToCards').style.transform = skewDirection + (-speed / 2) + "deg)";
+            
+
+            document.getElementById('deco1').style.cssText = "transform: skewX(" + (-speed / 1.2) + "deg); left" + (150 + Math.round(-actualScroll / 10)) + "px";
+            document.getElementById('deco2').style.cssText = "transform: skewX(" + (-speed / 1.2) + "deg); left" + (750 + Math.round(-actualScroll / 12)) + "px";
+            document.getElementById('deco3').style.cssText = "transform: skewX(" + (-speed / 1.2) + "deg); left" + (1650 + Math.round(-actualScroll / 8)) + "px";
+            document.getElementById('deco4').style.cssText = "transform: skewX(" + (-speed / 1.2) + "deg); left" + (2250 + Math.round(-actualScroll / 6)) + "px";
+            document.getElementById('deco5').style.cssText = "transform: skewX(" + (-speed / 1.2) + "deg); left" + (2750 + Math.round(-actualScroll / 8)) + "px";
+            document.getElementById('deco6').style.cssText = "transform: skewX(" + (-speed / 1.2) + "deg); left" + (3350 + Math.round(-actualScroll / 10)) + "px";
+            document.getElementById('deco7').style.cssText = "transform: skewX(" + (-speed / 1.2) + "deg); left" + (3950 + Math.round(-actualScroll / 10)) + "px";
+            // ------------------
+
+             //SKEW INTRO ET CONTACT
+//    document.getElementById('intro').style.transform = skewDirection + (-speed / 2) + "deg)";
+//    document.getElementById('contact').style.transform = skewDirection + (-speed / 2) + "deg)";
+//    document.getElementById('scrollToCards').style.transform = skewDirection + (-speed / 2) + "deg)";
+            
+             //SKEW IMAGE DECO FOND
+//    document.getElementById('deco1').style.transform = "skewX(" + (-speed / 1.2) + "deg)";
+//    document.getElementById('deco2').style.transform = "skewX(" + (-speed / 1.2) + "deg)";
+//    document.getElementById('deco3').style.transform = "skewX(" + (-speed / 1.2) + "deg)";
+//    document.getElementById('deco4').style.transform = "skewX(" + (-speed / 1.2) + "deg)";
+//    document.getElementById('deco5').style.transform = "skewX(" + (-speed / 1.2) + "deg)";
+//    document.getElementById('deco6').style.transform = "skewX(" + (-speed / 1.2) + "deg)";
+//    document.getElementById('deco7').style.transform = "skewX(" + (-speed / 1.2) + "deg)";
+            
+            //var offset = div. getBoundingClientRect().left; 
+        } else if ($('.vs-section').attr('style').split('(')[1] && mobile == true) {
+            // SI SMOOTH INIT OK & MOBILE
+            var topScroll1 = $('.vs-section').attr('style').split('(')[1];
+            var topScroll2 = topScroll1.split('px,')[1];
+            actualScroll = -topScroll2;
+            hauteurMaPage = $('.content').pageYOffset;
+            //actualScroll = window.pageYOffset;
+            //console.log(hauteurMaPage);
+
+        }
+    }
+  
+   
+
+
+   
+
+    // SKEW CARTES
+    document.getElementById('grid_01').style.transform = skewDirection + (-speed) + "deg)";
+    document.getElementById('grid_02').style.transform = skewDirection + (-speed) + "deg)";
+    document.getElementById('grid_03').style.transform = skewDirection + (-speed) + "deg)";
+    document.getElementById('grid_04').style.transform = skewDirection + (-speed) + "deg)";
+    document.getElementById('grid_05').style.transform = skewDirection + (-speed) + "deg)";
+    document.getElementById('grid_06').style.transform = skewDirection + (-speed) + "deg)";
+    document.getElementById('grid_07').style.transform = skewDirection + (-speed) + "deg)";
+    document.getElementById('grid_08').style.transform = skewDirection + (-speed) + "deg)";
+
+    // MISE A JOUR VAR PREALABLEMENT ETABLIE
+    currentPixel = nexPixel;
+
+}
+
+
+
+//
+//function makeItTop() {
+//    $('html, body').animate({
+//        scrollTop: target.offset().top
+//    }, 1000, function () {
+//        // Callback after animation
+//    });
+//}
+//
+
+// Select all links with hashes
+
+// Calculates the offsetTop or offsetLeft of an element relative to the viewport 
+// (not counting with any transforms the element might have)
+const getOffset = (elem, axis) => {
+    let offset = 0;
+    const type = axis === 'top' ? 'offsetTop' : 'offsetLeft';
+    do {
+        if (!isNaN(elem[type])) {
+            offset += elem[type];
+        }
+    } while (elem = elem.offsetParent);
+    return offset;
+}
+// Calculates the distance between two points.
+const distance = (p1, p2) => Math.hypot(p2.x - p1.x, p2.y - p1.y);
+// Generates a random number.
+const randNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+// Gets the mouse position. From http://www.quirksmode.org/js/events_properties.html#position
+const getMousePos = (e) => {
+    let posx = 0;
+    let posy = 0;
+    if (!e) e = window.event;
+    if (e.pageX || e.pageY) {
+        posx = e.pageX;
+        posy = e.pageY;
+    } else if (e.clientX || e.clientY) {
+        posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+        posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+    }
+    return {
+        x: posx,
+        y: posy
+    }
+};
+// Returns the rotation angle of an element.
+const getAngle = (el) => {
+    const st = window.getComputedStyle(el, null);
+    const tr = st.getPropertyValue('transform');
+    let values = tr.split('(')[1];
+    values = values.split(')')[0];
+    values = values.split(',');
+    return Math.round(Math.asin(values[1]) * (180 / Math.PI));
+};
+// Scroll control functions. Taken from https://stackoverflow.com/a/4770179.
+const keys = {
+    37: 1,
+    38: 1,
+    39: 1,
+    40: 1
+};
+const preventDefault = (e) => {
+    e = e || window.event;
+    if (e.preventDefault)
+        e.preventDefault();
+    e.returnValue = false;
+}
+const preventDefaultForScrollKeys = (e) => {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+const disableScroll = () => {
+    if (window.addEventListener) // older FF
+        window.addEventListener('DOMMouseScroll', preventDefault, false);
+    window.onwheel = preventDefault; // modern standard
+    window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+    window.ontouchmove = preventDefault; // mobile
+    document.onkeydown = preventDefaultForScrollKeys;
+}
+const enableScroll = () => {
+    if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null;
+    window.onwheel = null;
+    window.ontouchmove = null;
+    // DOT
+    //document.onkeydown = null;
+}
+
+// The GridItem class.
+class GridItem {
+    constructor(el) {
+        this.DOM = {
+            el: el
+        };
+        // The rectangle element around the image.
+        this.DOM.bg = this.DOM.el.querySelector('.grid__item-bg');
+        // The following DOM elements are elements that will move/tilt when hovering the item.
+        this.DOM.tilt = {};
+        // The image.
+        this.DOM.imgWrap = this.DOM.el.querySelector('.grid__item-wrap');
+        this.DOM.tilt.img = this.DOM.imgWrap.querySelector('img');
+        // The title (vertical text).
+        this.DOM.tilt.title = this.DOM.el.querySelector('.grid__item-title');
+        // The number (horizontal letter/number code).
+        this.DOM.tilt.number = this.DOM.el.querySelector('.grid__item-number');
+        // Split the number into spans using charming.js
+        charming(this.DOM.tilt.number);
+        // And access the spans/letters.
+        this.DOM.numberLetters = this.DOM.tilt.number.querySelectorAll('span');
+        // Configuration for when moving/tilting the elements on hover.
+        this.tiltconfig = {
+            title: {
+                translation: {
+                    x: [-8, 8],
+                    y: [4, -4]
+                }
+            },
+            number: {
+                translation: {
+                    x: [-2, 2],
+                    y: [-2, 2]
+                }
+            },
+            img: {
+                translation: {
+                    x: [-15, 15],
+                    y: [-10, 10]
+                }
+            }
+        };
+        // Get the rotation angle value of the image element.
+        // This will be used to rotate the DOM.bg to the same value when expanding/opening the item.
+        this.angle = getAngle(this.DOM.tilt.img);
+        // Init/Bind events.
+        this.initEvents();
+    }
+    initEvents() {
+        /**
+         * Mouseenter: 
+         * - Scale up the DOM.bg element.
+         * - Animate the number letters.
+         * 
+         * Mousemove: 
+         * - tilt - move both the number, image and title elements. 
+         * 
+         * 
+         * Mouseleave: 
+         * - Scale down the DOM.bg element.
+         * - Animate the number letters.
+         */
+        this.toggleAnimationOnHover = (type) => {
+            // Scale up the bg element.
+            TweenMax.to(this.DOM.bg, 1, {
+                ease: Expo.easeOut,
+                scale: type === 'mouseenter' ? 1.15 : 1
+            });
+            // Animate the number letters.
+            this.DOM.numberLetters.forEach((letter, pos) => {
+                TweenMax.to(letter, .2, {
+                    ease: Quad.easeIn,
+                    delay: pos * .1,
+                    y: type === 'mouseenter' ? '-10%' : '10%',
+                    opacity: 0,
+                    onComplete: () => {
+                        TweenMax.to(letter, type === 'mouseenter' ? 0.6 : 1, {
+                            ease: type === 'mouseenter' ? Expo.easeOut : Elastic.easeOut.config(1, 0.4),
+                            startAt: {
+                                y: type === 'mouseenter' ? '10%' : '-10%',
+                                opacity: 0
+                            },
+                            y: '0%',
+                            opacity: 1
+                        });
+                    }
+                });
+            });
+        };
+        this.mouseenterFn = (ev) => {
+            if (!allowTilt) return;
+            this.toggleAnimationOnHover(ev.type);
+        };
+        this.mousemoveFn = (ev) => requestAnimationFrame(() => {
+            if (!allowTilt) return;
+            this.tilt(ev);
+        });
+        this.mouseleaveFn = (ev) => {
+            if (!allowTilt) return;
+            this.resetTilt();
+            this.toggleAnimationOnHover(ev.type);
+        };
+        this.DOM.el.addEventListener('mouseenter', this.mouseenterFn);
+        this.DOM.el.addEventListener('mousemove', this.mousemoveFn);
+        this.DOM.el.addEventListener('mouseleave', this.mouseleaveFn);
+    }
+    tilt(ev) {
+        // Get mouse position.
+        const mousepos = getMousePos(ev);
+        // Document scrolls.
+        const docScrolls = {
+            left: body.scrollLeft + docEl.scrollLeft,
+            top: body.scrollTop + docEl.scrollTop
+        };
+        const bounds = this.DOM.el.getBoundingClientRect();
+        // Mouse position relative to the main element (this.DOM.el).
+        const relmousepos = {
+            x: mousepos.x - bounds.left - docScrolls.left,
+            y: mousepos.y - bounds.top - docScrolls.top
+        };
+        // Movement settings for the tilt elements.
+        for (let key in this.DOM.tilt) {
+            let t = this.tiltconfig[key].translation;
+            // Animate each of the elements..
+            TweenMax.to(this.DOM.tilt[key], 2, {
+                ease: Expo.easeOut,
+                x: (t.x[1] - t.x[0]) / bounds.width * relmousepos.x + t.x[0],
+                y: (t.y[1] - t.y[0]) / bounds.height * relmousepos.y + t.y[0]
+            });
+        }
+    }
+    resetTilt() {
+        for (let key in this.DOM.tilt) {
+            TweenMax.to(this.DOM.tilt[key], 2, {
+                ease: Elastic.easeOut.config(1, 0.4),
+                x: 0,
+                y: 0
+            });
+        }
+    }
+    /**
+     * Hides the item:
+     * - Scales down and fades out the image and bg elements.
+     * - Moves down and fades out the title and number elements.
+     */
+    hide(withAnimation = true) {
+        this.toggle(withAnimation, false);
+    }
+    /**
+     * Resets.
+     */
+    show(withAnimation = true) {
+        this.toggle(withAnimation);
+    }
+    toggle(withAnimation, show = true) {
+        TweenMax.to(this.DOM.tilt.img, withAnimation ? 0.8 : 0, {
+            ease: Expo.easeInOut,
+            delay: !withAnimation ? 0 : show ? 0.15 : 0,
+            scale: show ? 1 : 0,
+            opacity: show ? 1 : 0,
+        });
+        TweenMax.to(this.DOM.bg, withAnimation ? 0.8 : 0, {
+            ease: Expo.easeInOut,
+            delay: !withAnimation ? 0 : show ? 0 : 0.15,
+            scale: show ? 1 : 0,
+            opacity: show ? 1 : 0
+        });
+        this.toggleTexts(show ? 0.45 : 0, withAnimation, show);
+    }
+    // hides the texts (translate down and fade out).
+    hideTexts(delay = 0, withAnimation = true) {
+        this.toggleTexts(delay, withAnimation, false);
+    }
+    // shows the texts (reset transforms and fade in).
+    showTexts(delay = 0, withAnimation = true) {
+        this.toggleTexts(delay, withAnimation);
+    }
+    toggleTexts(delay, withAnimation, show = true) {
+        TweenMax.to([this.DOM.tilt.title, this.DOM.tilt.number], !withAnimation ? 0 : show ? 1 : 0.5, {
+            ease: show ? Expo.easeOut : Quart.easeIn,
+            delay: !withAnimation ? 0 : delay,
+            y: show ? 0 : 20,
+            opacity: show ? 1 : 0
+        });
+    }
+}
+
+// The Content class. Represents one content item per grid item.
+class Content {
+    constructor(el) {
+        this.DOM = {
+            el: el
+        };
+        // The content elements: image, title, subtitle and text.
+        this.DOM.img = this.DOM.el.querySelector('.content__item-img');
+        this.DOM.title = this.DOM.el.querySelector('.content__item-title');
+        this.DOM.subtitle = this.DOM.el.querySelector('.content__item-subtitle');
+        this.DOM.text = this.DOM.el.querySelector('.content__item-text');
+        // Split the title into spans using charming.js
+        charming(this.DOM.title);
+        // And access the spans/letters.
+        this.DOM.titleLetters = this.DOM.title.querySelectorAll('span');
+        this.titleLettersTotal = this.DOM.titleLetters.length;
+    }
+    /**
+     * Show/Hide the content elements (title letters, the subtitle and the text).
+     */
+    show(delay = 0, withAnimation = true) {
+        this.toggle(delay, withAnimation);
+    }
+    hide(delay = 0, withAnimation = true) {
+        this.toggle(delay, withAnimation, false);
+    }
+    toggle(delay, withAnimation, show = true) {
+        setTimeout(() => {
+
+            this.DOM.titleLetters.forEach((letter, pos) => {
+                TweenMax.to(letter, !withAnimation ? 0 : show ? .6 : .3, {
+                    ease: show ? Back.easeOut : Quart.easeIn,
+                    delay: !withAnimation ? 0 : show ? pos * .05 : (this.titleLettersTotal - pos - 1) * .04,
+                    startAt: show ? {
+                        y: '50%',
+                        opacity: 0
+                    } : null,
+                    y: show ? '0%' : '50%',
+                    opacity: show ? 1 : 0
+                });
+            });
+            this.DOM.subtitle.style.opacity = show ? 1 : 0;
+            this.DOM.text.style.opacity = show ? 1 : 0;
+
+        }, withAnimation ? delay * 1000 : 0);
+    }
+}
+
+// The Grid class.
+class Grid {
+    constructor(el) {
+        this.DOM = {
+            el: el
+        };
+        // The grid wrap.
+        this.DOM.gridWrap = this.DOM.el.parentNode;
+        // The grid items.
+        this.items = [];
+        Array.from(this.DOM.el.querySelectorAll('.grid__item')).forEach(itemEl => this.items.push(new GridItem(itemEl)));
+        // The total number of items.
+        this.itemsTotal = this.items.length;
+        // The content items.
+        this.contents = [];
+        Array.from(document.querySelectorAll('.content > .content__item')).forEach(contentEl => this.contents.push(new Content(contentEl)));
+        // Back control and scroll indicator (elements shown when the item´s content is open).
+        this.DOM.closeCtrl = document.querySelector('.content__close');
+        this.DOM.scrollIndicator = document.querySelector('.content__indicator');
+        // The open grid item.
+        this.current = -1;
+        // Init/Bind events.
+        this.initEvents();
+    }
+    initEvents() {
+        // Clicking a grid item hides all the other grid items (ordered by proximity to the clicked one) 
+        // and expands/opens the clicked one.
+        for (let item of this.items) {
+            item.DOM.el.addEventListener('click', (ev) => {
+
+
+                //ev.preventDefault();
+                cancelAnimationFrame(myReq);
+
+                this.openItem(item);
+                //DOT
+                smooth.off();
+                setTimeout(function () {
+
+                $('html').addClass('scrollVerticalCarte');
+                $('.vs-section').addClass('vsUnselectable');
+                    
+            
+                    // DOT
+                    // Fonction escape - impossible de lancer la fonction close
+//                document.onkeydown = function (evt) {
+//                    evt = evt || window.event;
+//
+//                    var isEscape = false;
+//
+//                    if ("key" in evt) {
+//                        isEscape = (evt.key === "Escape" || evt.key === "Esc");
+//                    } else {
+//                        isEscape = (evt.keyCode === 27);
+//                    }
+//                    if (isEscape) {
+//                        //console.log("Escape");
+//                    }
+//                };
+                    
+                }, 500);
+            });
+        }
+        // Close item.
+
+
+        this.DOM.closeCtrl.addEventListener('click', () => this.closeItem());
+        document.querySelector('#backHome1').addEventListener('click', () => this.closeItem());
+        document.querySelector('#backHome2').addEventListener('click', () => this.closeItem());
+        document.querySelector('#backHome3').addEventListener('click', () => this.closeItem());
+        document.querySelector('#backHome4').addEventListener('click', () => this.closeItem());
+        document.querySelector('#backHome5').addEventListener('click', () => this.closeItem());
+        document.querySelector('#backHome6').addEventListener('click', () => this.closeItem());
+        document.querySelector('#backHome7').addEventListener('click', () => this.closeItem());
+        document.querySelector('#backHome8').addEventListener('click', () => this.closeItem());
+
+
+
+        // (Incomplete! For now: if theres an open item, then show back the grid.
+        this.resizeFn = () => {
+            if (this.current === -1 || winsize.width === window.innerWidth) return;
+            this.closeItem(false);
+
+        };
+        window.addEventListener('resize', this.resizeFn);
+    }
+    getSizePosition(el, scrolls = true) {
+        const scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
+        const scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
+        return {
+            width: el.offsetWidth,
+            height: el.offsetHeight,
+            left: scrolls ? getOffset(el, 'left') - scrollLeft : getOffset(el, 'left'),
+            top: scrolls ? getOffset(el, 'top') - scrollTop : getOffset(el, 'top')
+        };
+    }
+    //DOT 
+    // Position du background lors de l'animation
+    openItem(item) {
+        if (this.isAnimating) return;
+        this.isAnimating = true;
+        // Get the current scroll position.
+        this.scrollPos = window.scrollY;
+        // Disable page scrolling.
+        disableScroll();
+        // Disable tilt.
+        allowTilt = false;
+        //previousScrollnumber = actualScroll;
+        // Set the current value (index of the clicked item).
+        this.current = this.items.indexOf(item);
+        // Hide all the grid items except the one we want to open.
+        this.hideAllItems(item);
+        // Also hide the item texts.
+        item.hideTexts();
+        // Set the item´s z-index to a high value so it overlaps any other grid item.
+        item.DOM.el.style.zIndex = 1000;
+        // Get the "grid__item-bg" width and height and set it explicitly, 
+        // also set its top and left respective to the page.
+        const itemDim = this.getSizePosition(item.DOM.el);
+        item.DOM.bg.style.width = `${itemDim.width}px`;
+        item.DOM.bg.style.height = `${itemDim.height+168}px`;
+
+        item.DOM.bg.style.left = `0px`;
+        item.DOM.bg.style.top = `0px`;
+        
+
+        //DOT 
+        if (mobile == false) {
+            //DESKTOP OK
+            //item.DOM.bg.style.left = `${itemDim.left}px`;
+            //item.DOM.bg.style.top = `${itemDim.top}px`;
+
+
+            translationX = winsize.width / 2 - ((itemDim.left - actualScroll) + itemDim.width / 2);
+            translationY = 0;
+
+
+
+        } else {
+            // item.DOM.bg.style.left = `0px`;
+            // item.DOM.bg.style.top = `0px`;
+
+            translationX = 0;
+            translationY = winsize.height / 2 - (itemDim.top + itemDim.height / 2);
+        }
+
+        //DOT 
+        // Set it to position fixed. NEED ID FOR DESKTOP
+        //item.DOM.bg.style.position = 'fixed';
+
+
+
+        // DOT
+        //item.DOM.bg.style.position = 'absolute';
+        // Calculate the viewport diagonal. We will need to take this in consideration when scaling up the item´s bg element.
+        const d = Math.hypot(winsize.width, winsize.height);
+        var translationX, translationY;
+
+
+        TweenMax.to($('#barreTop'), 0.8, {
+            ease: Expo.easeInOut,
+            delay: 2,
+            rotation: 45
+        });
+        TweenMax.to($('#barreBottom'), 0.8, {
+            ease: Expo.easeInOut,
+            delay: 2,
+            rotation: -45
+        });
+
+
+
+        // Scale up the item´s bg element.
+        TweenMax.to(item.DOM.bg, 1.2, {
+            ease: Expo.easeInOut,
+            delay: 0.4,
+            //DOT
+            //x: winsize.width / 2 - (itemDim.left + itemDim.width / 2),
+            x: translationX,
+            //            x: 0,
+            //y: winsize.height / 2 - (itemDim.top + itemDim.height / 2),
+            y: translationY,
+            //            y: 0,
+            scaleX: d / itemDim.width + 0.1,
+            scaleY: d / itemDim.height + 0.1,
+            rotation: -1 * item.angle * 2
+        });
+
+        //DOT
+        //var transx = winsize.width / 2 - (itemDim.left + itemDim.width / 2);
+        //console.log('largeur item.DOM.bg.style.width : ' + item.DOM.bg.style.width);
+        //console.log('d : ' + d);
+        //console.log('winsize.width : ' + winsize.width);
+        //console.log('itemDim.left : ' + itemDim.left);
+        //console.log('itemDim.width : ' + itemDim.width);
+        //console.log('Tweenmax x : ' + transx);
+
+
+        // Get the content element respective to this grid item.
+        const contentEl = this.contents[this.current];
+        // Set it to current.
+        contentEl.DOM.el.classList.add('content__item--current');
+
+        itemMaxScroll = contentEl.DOM.el.scrollHeight;
+        document.body.style.height = itemMaxScroll + 'px';
+        document.getElementById('pages').style.overflow = 'hidden';
+
+
+
+        // Calculate the item´s image and content´s image sizes and positions. 
+        // We need this so we can scale up and translate the item´s image to the same size and position of the content´s image.
+        const imgDim = this.getSizePosition(item.DOM.imgWrap);
+        const contentImgDim = this.getSizePosition(contentEl.DOM.img, false);
+        // Show the back control and scroll indicator and all the item´s content elements (1 second delay).
+        //DOT
+        // Modifier la valeur pour timing apparition contenu carte.
+        this.showContentElems(contentEl, 2);
+        // Animate the item´s image.
+
+        //DOT
+        // POSITION IMG DESK + MOBILE OK 
+        var translationImgX, translationImgY;
+
+        if (mobile == false) {
+            translationImgX = (actualScroll + contentImgDim.left + contentImgDim.width / 2) - (imgDim.left + imgDim.width / 2);
+            translationImgY = (contentImgDim.top + contentImgDim.height / 2) - (imgDim.top + imgDim.height / 2);
+        } else {
+            translationImgX = 0;
+            translationImgY = (contentImgDim.top + contentImgDim.height / 2) - (imgDim.top + imgDim.height / 2);
+        }
+
+
+        TweenMax.to(item.DOM.tilt.img, 1.2, {
+            ease: Expo.easeInOut,
+            delay: 0.5,
+            scaleX: contentImgDim.width / imgDim.width,
+            scaleY: contentImgDim.height / imgDim.height,
+            //x: (contentImgDim.left + contentImgDim.width / 2) - (imgDim.left + imgDim.width / 2),
+            //DOT
+            //            x: (actualScroll + contentImgDim.left + contentImgDim.width / 2) - (imgDim.left + imgDim.width / 2),
+            x: translationImgX,
+            //            y: (contentImgDim.top + contentImgDim.height / 2) - (imgDim.top + imgDim.height / 2),
+            y: translationImgY,
+            rotation: 0,
+            onComplete: () => {
+
+                // Hide the item´s image and show the content´s image. Should both be overlapping.
+                item.DOM.tilt.img.style.opacity = 0;
+                contentEl.DOM.img.style.visibility = 'visible';
+                $('.back-home').css('opacity', '1');
+                // Set the main content wrapper to absolute so it´s position at the top.
+                //DOT
+                //contentEl.DOM.el.parentNode.style.position = 'absolute';
+                // Hiding the grid scroll.
+                //DOT
+                //this.DOM.gridWrap.classList.add('grid-wrap--hidden');
+                // Scroll up the page.
+                window.scrollTo(0, 0);
+                // Enable page scrolling.
+                enableScroll();
+                this.isAnimating = false;
+                TweenMax.to($('.page-subtitle'), 1.2, {
+                    opacity: 1,
+                    ease: Expo.easeInOut,
+                    y: 10
+                });
+            }
+        });
+    }
+    // Close Item
+    closeItem(withAnimation = true) {
+        //        makeItTop();
+        if (this.isAnimating) return;
+        this.isAnimating = true;
+
+        // DOT
+        // Relance le raf pour les anim de skew
+        raf = window.setInterval(actualScroll, 25);
+        // Get the content element respective to this grid item.
+        const contentEl = this.contents[this.current];
+        var monThis = this;
+        // Scroll to the previous scroll position before opening the item.
+        //window.scrollTo(0, this.scrollPos);
+        disableScroll();
+
+
+
+        $('html, body').animate({
+            scrollTop: 0
+        }, 600, function () {
+            // Callback after animation
+            //animCloseItem();
+            item.DOM.tilt.img.style.opacity = 1;
+            contentEl.DOM.img.style.visibility = 'hidden';
+            monThis.hideContentElems(contentEl, 0, withAnimation);
+        });
+
+        //DOT
+        //contentEl.DOM.el.parentNode.style.position = 'fixed';
+        // Disable page scrolling.
+
+        // Showing the grid scroll.
+        this.DOM.gridWrap.classList.remove('grid-wrap--hidden');
+        // The item that is open.
+        const item = this.items[this.current];
+        // Hide the back control and scroll indicator and all the item´s content elements.
+        // Set the grid´s image back to visible and hide the content´s one.
+
+        // Animate the grid´s image back to the grid position.
+        TweenMax.to(item.DOM.tilt.img, withAnimation ? 1.2 : 0, {
+            ease: Expo.easeInOut,
+            delay: 0.4,
+            scaleX: 1,
+            scaleY: 1,
+            x: 0,
+            y: 0,
+            rotation: item.angle * 2
+        });
+        // And also the bg element.
+
+        TweenMax.to($('#barreTop'), 0.8, {
+            ease: Expo.easeInOut,
+            delay: 0.3,
+            rotation: 90
+        });
+        TweenMax.to($('#barreBottom'), 0.8, {
+            ease: Expo.easeInOut,
+            delay: 0.3,
+            rotation: 90
+        });
+
+        TweenMax.to(item.DOM.bg, withAnimation ? 1.2 : 0, {
+            ease: Expo.easeInOut,
+            delay: 0.4,
+            x: 0,
+            y: 0,
+            scaleX: 1,
+            scaleY: 1,
+            rotation: 0,
+            onComplete: () => {
+                contentEl.DOM.el.classList.remove('content__item--current');
+                document.body.removeAttribute('style');
+                document.getElementById('pages').removeAttribute('style');
+                $('.back-home').css('opacity', '0');
+                item.DOM.bg.style.position = 'absolute';
+                item.DOM.bg.style.left = '0px';
+                item.DOM.bg.style.top = '0px';
+                this.current = -1;
+                allowTilt = true;
+                item.DOM.el.style.zIndex = 0;
+                enableScroll();
+                this.isAnimating = false;
+
+                //DOT
+                $('html').removeClass('scrollVerticalCarte');
+                $('.vs-section').removeClass('vsUnselectable');
+                smooth.on();
+                smooth.scrollTo(actualScroll);
+
+
+
+            }
+        });
+        TweenMax.to($('.page-subtitle'), 1.2, {
+            opacity: 0,
+            ease: Expo.easeInOut,
+            y: 0
+        });
+        // Show all the grid items except the one we want to close.
+        this.showAllItems(item, withAnimation);
+        // Also show the item texts. (1s delay)
+        item.showTexts(1, withAnimation);
+        // To setup vertical smooth scroll
+
+    }
+    /**
+     * Toggle the content elements.
+     */
+    showContentElems(contentEl, delay = 0, withAnimation = true) {
+        this.toggleContentElems(contentEl, delay, withAnimation);
+    }
+    hideContentElems(contentEl, delay = 0, withAnimation = true) {
+        this.toggleContentElems(contentEl, delay, withAnimation, false);
+    }
+    toggleContentElems(contentEl, delay, withAnimation, show = true) {
+        // toggle the back control and scroll indicator.
+        TweenMax.to([this.DOM.closeCtrl, this.DOM.scrollIndicator], withAnimation ? 0.8 : 0, {
+            ease: show ? Expo.easeOut : Expo.easeIn,
+            delay: withAnimation ? delay : 0,
+            startAt: show ? {
+                y: 60
+            } : null,
+            y: show ? 0 : 60,
+            opacity: show ? 1 : 0
+        });
+
+        if (show) {
+            contentEl.show(delay, withAnimation);
+        } else {
+            contentEl.hide(delay, withAnimation);
+        }
+    }
+    // Based on https://stackoverflow.com/q/25481717
+    sortByDist(refPoint, itemsArray) {
+        let distancePairs = [];
+        let output = [];
+
+        for (let i in itemsArray) {
+            const rect = itemsArray[i].DOM.el.getBoundingClientRect();
+            distancePairs.push([distance(refPoint, {
+                x: rect.left + rect.width / 2,
+                y: rect.top + rect.height / 2
+            }), i]);
+        }
+
+        distancePairs.sort((a, b) => a[0] - b[0]);
+
+        for (let p in distancePairs) {
+            const pair = distancePairs[p];
+            output.push(itemsArray[pair[1]]);
+        }
+
+        return output;
+    }
+    /**
+     * Shows/Hides all the grid items except the "exclude" item.
+     * The items will be sorted based on the distance to the exclude item.
+     */
+    showAllItems(exclude, withAnimation = true) {
+        this.toggleAllItems(exclude, withAnimation);
+    }
+    hideAllItems(exclude, withAnimation = true) {
+        this.toggleAllItems(exclude, withAnimation, false);
+    }
+    toggleAllItems(exclude, withAnimation, show = true) {
+        if (!withAnimation) {
+            this.items.filter(item => item != exclude).forEach((item, pos) => item[show ? 'show' : 'hide'](withAnimation));
+        } else {
+            const refrect = exclude.DOM.el.getBoundingClientRect();
+            const refPoint = {
+                x: refrect.left + refrect.width / 2,
+                y: refrect.top + refrect.height / 2
+            };
+            this.sortByDist(refPoint, this.items.filter(item => item != exclude))
+                .forEach((item, pos) => setTimeout(() => item[show ? 'show' : 'hide'](), show ? 300 + pos * 70 : pos * 70));
+        }
+    }
+}
+
+// Controls whether the item will have the "tilt" movement on hover (mousemove) or not.
+let allowTilt = true;
+
+// Caching some stuff..
+const body = document.body;
+const docEl = document.documentElement;
+
+// Window sizes.
+let winsize;
+const calcWinsize = () => winsize = {
+    width: window.innerWidth,
+    height: window.innerHeight
+};
+calcWinsize();
+window.addEventListener('resize', calcWinsize);
+
+// Initialize the Grid.
+const grid = new Grid(document.querySelector('.grid'));
+
+// Preload images.
+imagesLoaded(document.querySelectorAll('.grid__item-img'), () => {
+    body.classList.remove('loading');
+    var msnry = new Masonry(grid.DOM.el, {
+        // options
+        itemSelector: '.grid__item'
+        // DOT 
+        //        columnWidth: 400,
+        //        gutter: 100,
+        //        fitWidth: true
+    });
+});
+</script></head>
+<body class="is-native-scroll y-scroll x-scroll"><div id="loader" style="left: -120%; transform: matrix(1, 0, 0.17364, 0.9848, 0, 0);">
+    <div id="containerLoader" style="left: 170%;">
+        <span id="pourcentLoader">100%</span>
+        <img src="./MMI Castres - Le site du département MMI à Castres_files/loader.svg" width="200" height="60px" alt="">
+        <div id="bgLoaderBlanc" style="width: 200px;">
+        </div>
+    </div>
+
+</div>
+
+
+
+    <div class="vs-section" style="left: 0px; transform: translate3d(0px, 0px, 0px); width: 8690px;">
+        <div id="intro" style="transform: skewX(0deg);">
+            <div class="wrapper">
+                <span class="legal">© 2018 - MMI Castres</span>
+<div>
+    <span id="logo">mmi</span>
+    <!--	<button id="contactZone">contact</button>-->
+</div>
+<div id="titreSite">
+    <h1 class="title">Métiers <br>
+        du Multimedia <br>
+        &amp; de l'Internet <br>
+        Castres
+    </h1>
+   
+
+</div>
+<div class="home-img1">
+    <img src="./MMI Castres - Le site du département MMI à Castres_files/iut1.jpg" alt=""></div>
+<div class="home-img2">
+    <img src="./MMI Castres - Le site du département MMI à Castres_files/iut2.jpg" alt=""></div>
+<div class="home-img3">
+    <img src="./MMI Castres - Le site du département MMI à Castres_files/iut3.jpg" alt=""></div>
+<div class="home-img4">
+    <img src="./MMI Castres - Le site du département MMI à Castres_files/iut4.jpg" alt=""></div>
+<!--<span class="right-deco"><span>mmi castres</span></span>-->
+<div class="deco-gradient"></div>
+<div data-speed=".20"></div>
+            </div>
+        </div>
+
+<div class="containerMouse">
+                <div id="follower" style="transform: translate(373.016px, 842.984px);"></div>
+            </div>
+        <div id="cartes" class="calcWithVs">
+            
+            <div class="flou"></div>
+            <div class="wrapper">
+                <div class="grid-wrap">
+   <button id="contactZone">contact</button>
+   <button id="scrollToCards" style="transform: skewX(0deg);"><span><img src="./MMI Castres - Le site du département MMI à Castres_files/arrow-link-hover.svg" alt=""> scroll</span></button>
+   <span class="right-deco"><span>mmi castres</span></span>
+   
+   
+    <div class="grid" style="position: relative; height: 328.781px;">
+        <img src="./MMI Castres - Le site du département MMI à Castres_files/deco1.jpg" alt="" class="imageDeco vs-div" data-speed="-0.13" id="deco1" style="transform: skewX(0deg);">
+        <button id="grid_01" class="grid__item grid__item--odd vs-div" data-speed="0.13" style="transform: skewX(0deg); position: absolute; left: 0px; top: 0px;">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+                <img class="grid__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/1.jpg" alt="Some image">
+            </div>
+            <h3 class="grid__item-title">DUT MMI</h3>
+            <h4 class="grid__item-number"><span class="char1">0</span><span class="char2">1</span></h4>
+            <div class="intro">
+                <p>Découvrez les différents enseignements, matières, programmes et spécialisations</p>
+            </div>
+        </button>
+        <img src="./MMI Castres - Le site du département MMI à Castres_files/deco2.jpg" alt="" class="imageDeco" id="deco2" style="transform: skewX(0deg);">
+        <button id="grid_02" class="grid__item grid__item--even vs-div" data-speed="0.13" style="transform: skewX(0deg); position: absolute; left: 600px; top: 0px;">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+                <img class="grid__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/2.jpg" alt="Some image">
+            </div>
+            <h3 class="grid__item-title">LP COM2WEB</h3>
+            <h4 class="grid__item-number"><span class="char1">0</span><span class="char2">2</span></h4>
+            <div class="intro">
+                <p>Découvrez les différents enseignements, matières, programmes et spécialisations</p>
+            </div>
+        </button>
+        <img src="./MMI Castres - Le site du département MMI à Castres_files/deco3.jpg" alt="" class="imageDeco" id="deco3" style="transform: skewX(0deg);">
+        <button id="grid_03" class="grid__item grid__item--odd vs-div" data-speed="0.13" style="transform: skewX(0deg); position: absolute; left: 1200px; top: 0px;">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+                <img class="grid__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/3.jpg" alt="Some image">
+            </div>
+            <h3 class="grid__item-title">LP DREAM</h3>
+            <h4 class="grid__item-number"><span class="char1">0</span><span class="char2">3</span></h4>
+            <div class="intro">
+                <p>Découvrez les différents enseignements, matières, programmes et spécialisations</p>
+            </div>
+        </button>
+        <img src="./MMI Castres - Le site du département MMI à Castres_files/deco4.jpg" alt="" class="imageDeco" id="deco4" style="transform: skewX(0deg);">
+        
+        <button id="grid_04" class="grid__item grid__item--even vs-div" data-speed="0.13" style="transform: skewX(0deg); position: absolute; left: 1800px; top: 0px;">
+            <div class="grid__item-bg" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+            <div class="grid__item-wrap">
+                <img class="grid__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/4.jpg" alt="Some image" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+            </div>
+            <h3 class="grid__item-title" style="transform: matrix(1, 0, 0, 1, 0, 0);">COMPÉTENCES</h3>
+            <h4 class="grid__item-number" style="transform: matrix(1, 0, 0, 1, 0, 0);"><span class="char1" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">0</span><span class="char2" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">4</span></h4>
+            <div class="intro">
+                <p>Le panel de compétences des MMI</p>
+            </div>
+        </button>
+        <img src="./MMI Castres - Le site du département MMI à Castres_files/deco5.jpg" alt="" class="imageDeco" id="deco5" style="transform: skewX(0deg);">
+        
+        <button id="grid_05" class="grid__item grid__item--odd vs-div" data-speed="0.13" style="transform: skewX(0deg); position: absolute; left: 2400px; top: 0px;">
+            <div class="grid__item-bg" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+            <div class="grid__item-wrap">
+                <img class="grid__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/5.jpg" alt="Some image" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+            </div>
+            <h3 class="grid__item-title" style="transform: matrix(1, 0, 0, 1, 0, 0);">Département</h3>
+            <h4 class="grid__item-number" style="transform: matrix(1, 0, 0, 1, 0, 0);"><span class="char1" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">0</span><span class="char2" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">5</span></h4>
+            <div class="intro">
+                <p>L’équipe pédagogique de l’IUT de Castres</p>
+            </div>
+        </button>
+        <img src="./MMI Castres - Le site du département MMI à Castres_files/deco6.jpg" alt="" class="imageDeco" id="deco6" style="transform: skewX(0deg);">
+        
+        <button id="grid_06" class="grid__item grid__item--even vs-div" data-speed="0.13" style="transform: skewX(0deg); position: absolute; left: 3000px; top: 0px;">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+                <img class="grid__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/6.jpg" alt="Some image">
+            </div>
+            <h3 class="grid__item-title">Débouchés</h3>
+            <h4 class="grid__item-number"><span class="char1">0</span><span class="char2">6</span></h4>
+            <div class="intro">
+                <p>Quelles suites possibles à l’aventure MMI</p>
+            </div>
+        </button>
+        <img src="./MMI Castres - Le site du département MMI à Castres_files/deco7.jpg" alt="" class="imageDeco" id="deco7" style="transform: skewX(0deg);">
+        
+        <button id="grid_07" class="grid__item grid__item--odd vs-div" data-speed="0.13" style="transform: skewX(0deg); position: absolute; left: 3600px; top: 0px;">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+                <img class="grid__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/7.jpg" alt="Some image">
+            </div>
+            <h3 class="grid__item-title">Postuler</h3>
+            <h4 class="grid__item-number"><span class="char1">0</span><span class="char2">7</span></h4>
+            <div class="intro">
+                <p>Comment déposer sa candidature pour une formation MMI</p>
+            </div>
+        </button>
+        
+        
+        <button id="grid_08" class="grid__item grid__item--even vs-div" data-speed="0.13" style="transform: skewX(0deg); position: absolute; left: 4200px; top: 0px;">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+                <img class="grid__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/8.jpg" alt="Some image">
+            </div>
+            <h3 class="grid__item-title">Le campus</h3>
+            <h4 class="grid__item-number"><span class="char1">0</span><span class="char2">8</span></h4>
+            <div class="intro">
+                <p>La vie étudiante à Castres</p>
+            </div>
+        </button>
+
+    </div>
+</div><!-- /grid-wrap -->
+            </div>
+        </div>
+        <div id="contact" class="" style="transform: skewX(0deg);">
+            <div class="wrapper">
+                <a class="legal" href="http://studio-dot.fr/" target="_blank">Réalisation <span>DOT</span></a>
+<!--<div id="logo"><span>mmi</span></div>-->
+<div id="titreSite">
+	<h1 class="title">Nous <br>Contacter</h1>
+<!--	<p>Découvrez les différents <br> enseignements, matières, <br> programmes et spécialisations</p>-->
+	<a href="mailto:contact.mmi@iut-tlse3.fr" class="mail">contact.mmi <br>
+		@iut-tlse3.fr
+	</a>
+	<span class="telephone">
+		<a href="tel:0563621167">05.63.62.11.67</a>
+	</span>
+	<span class="addresse">
+		IUT Paul Sabatier <br>
+		Département : Métiers du <br>
+		Multimédia et de l'Internet <br>
+		Avenue Georges Pompidou <br>
+		B.P. 20258 <br>
+		81104 CASTRES
+	</span>
+	<a href="http://iut.ups-tlse.fr/" target="_blank" class="logo-iut">
+		<img src="./MMI Castres - Le site du département MMI à Castres_files/logo-iut.jpg" alt="">
+	</a>
+</div>
+<!--<span class="right-deco"><span>mmi castres</span></span>-->
+<div class="deco-gradient"></div>
+<div data-speed=".20"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content" id="pages">
+	<div class="content__item">
+		<div class="content__item-intro">
+	<img class="content__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/1.jpg" alt="Some image">
+	<h2 class="content__item-title"><span class="char1">D</span><span class="char2">U</span><span class="char3">T</span><span class="char4"> </span><span class="char5">M</span><span class="char6">M</span><span class="char7">I</span></h2>
+	<span class="page-subtitle">DUT Métiers du Multimédia et de l’Internet</span>
+</div>
+<h3 class="content__item-subtitle">Le DUT des développeurs web, des designers multimédias et des communicants web</h3>
+<div class="content__item-text">
+	<p>Un diplôme national <a href="hhttp://iutmmi.fr/home/dut-mmi/" target="_blank" class="external-link">Plus de renseignements sur le site national</a> avec des adaptations locales à Castres :</p>
+	<ul>
+		<li>1800 h de cours sur 2 ans / 30-35h de cours par semaine</li>
+		<li>14 semaines de stages minimum : 3 semaines en 1ère année, de 11 à 15 semaines en 2ème année</li>
+		<li>un tronc commun en 1ère année mais 3 filières au choix en 2ème année : Informatique pour le web, Mulitmédia, Communication digitale</li>
+
+	</ul>
+	<!--
+	<h4>Des compétences <br>Les 2 UE</h4>
+	<div class="table-large-custom">
+		<div class="cell-big">
+			<span class="desc">Communication, culture et connaissance de l’environnement socio-économique</span>
+			<span class="number">Dev Web</span>
+		</div>
+		<div class="cell-big border-sides">
+			<span class="desc">Culture technologique et développement multimédia</span>
+			<span class="number">Infographie</span>
+		</div>
+		<div class="cell-big border-sides no-grid">
+			<a href="hhttp://iutmmi.fr/home/dut-mmi/" target="_blank" class="external-link">Plus de renseignements sur le site national</a>
+		</div>
+	</div>
+-->
+</div>
+		<span id="logo">mmi</span>
+		<button class="back-home" id="backHome1"><span class="legal">© 2018 - MMI Castres</span>Retour Accueil <img src="./MMI Castres - Le site du département MMI à Castres_files/arrow-backlink.svg"></button>
+		<div class="deco-gradient"></div>
+	</div><!-- /content__item -->
+	<div class="content__item">
+		<div class="content__item-intro">
+	<img class="content__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/2.jpg" alt="Some image">
+	<h2 class="content__item-title"><span class="char1">L</span><span class="char2">P</span><span class="char3"> </span><span class="char4">C</span><span class="char5">O</span><span class="char6">M</span><span class="char7">2</span><span class="char8">W</span><span class="char9">E</span><span class="char10">B</span></h2>
+	<span class="page-subtitle">Licence Professionnelle Communication Digitale &amp; Webmastering</span>
+</div>
+<h3 class="content__item-subtitle">Une formation pluridisciplinaire valorisante, dont la visée est l’insertion rapide dans la vie active.</h3>
+<div class="content__item-text">
+
+	<p>Elle s’effectue sur une année, avec une expérience professionnalisante (stage ou alternance). Les postes visés principalement sont ceux de communicants <span class="overline overline-pink">polyvalent sur supports numériques</span> et de webmarketeur. Ce cursus est axé sur la communication sur supports numériques et le webmarketing, qui constituent la spécialité de la licence.
+	</p>
+	<div class="cell-big border-sides no-grid">
+		<a href="http://www.com2web.iut-tlse3.fr/" target="_blank" class="external-link">Plus de renseignements sur le site de la licence</a>
+	</div>
+	<h4>Infographie</h4>
+	<div class="table-custom table-one-line">
+		<div class="cell-big border-top">
+			<span class="skill">Photoshop</span>
+		</div>
+		<div class="cell-big border-sides border-top">
+			<span class="skill">Illustrator</span>
+		</div>
+		<div class="cell-big border-top">
+			<span class="skill">Indesign &amp; Print</span>
+		</div>
+	</div>
+	<h4>INTEGRATION WEB</h4>
+	<div class="table-custom table-one-line">
+		<div class="cell-big border-top">
+			<span class="skill">HTML / PHP / XML</span>
+		</div>
+		<div class="cell-big border-sides border-top">
+			<span class="skill">CSS / SCSS</span>
+		</div>
+		<div class="cell-big border-top">
+			<span class="skill">CMS</span>
+		</div>
+	</div>
+	<h4>COMMUNICATION &amp; MARKETING</h4>
+	<div class="table-custom table-one-line">
+		<div class="cell-big border-top">
+			<span class="skill">Rédaction Web</span>
+		</div>
+		<div class="cell-big border-sides border-top">
+			<span class="skill">Réseaux sociaux</span>
+		</div>
+		<div class="cell-big border-top">
+			<span class="skill">Veille &amp; Référencement</span>
+		</div>
+	</div>
+
+	<h4>Compétences</h4>
+	<p>Vous serez capables de concevoir et de mettre en oeuvre une <span class="overline overline-pink">stratégie de communication digitale</span> et de webmarketing:</p>
+	<ul>
+		<li><span class="first-word">concevoir des supports de communication</span> en maîtrisant des logiciels graphiques comme Photoshop, Illustrator et Indesign (plaquettes, logos, affiches);</li>
+		<li><span class="first-word">développer des sites internet</span> avec des interfaces adaptées en maîtrisant des langages comme l’HTML et le CSS ainsi que des CMS comme Wordpress et Drupal;</li>
+		<li><span class="first-word">mener des campagnes</span> de webmarketing pour acquérir et fidéliser une audience (newsletters, référencement, e-commerce);</li>
+		<li><span class="first-word">animer des communautés</span> sur les réseaux sociaux et définir une identité numérique pour un produit, une entreprise ou une organisation.</li>
+	</ul>
+
+
+	<h4>UN PROGRAMME PROFESSIONNALISANT</h4>
+	<span class="intro-p">Une unité d'enseignement est entièrement consacrée à votre accompagnement professionnel.</span>
+	<p>La formation est proposée en alternance (contrat de professionnalisation ou d’apprentissage). Sous le statut de salarié, vous alternez les périodes <span class="overline overline-pink">d’enseignement et les périodes en entreprise</span>.</p>
+
+	<h4 class="circle-bg">L’ALTERNANCE</h4>
+	<p>L'alternance est possible en signant un <span class="overline overline-pink">contrat d'apprentissage ou de professionnalisation</span> sur une durée d'une année avec une entreprise proposant une mission en rapport avec l'un des domaines de la Licence Com2Web.</p>
+	<p>Le rythme d'alternance, travaillé avec les professionnels du secteur, permet, par de longues périodes continues en entreprise (généralement un mois et demi), à l'alternant d'être associé aux projets de l'entreprise.
+	</p>
+
+	<div class="table-large-custom">
+		<div class="cell-big">
+			<span class="desc">Contrat en alternance d'un an ou stage de 4 mois</span>
+			<span class="number">#01</span>
+		</div>
+		<div class="cell-big border-sides">
+			<span class="desc">Modules d'apprentissage polyvalents</span>
+			<span class="number">#02</span>
+		</div>
+		<div class="cell-big border-sides">
+			<span class="desc">Pour l'alternance, 30 % du temps en formation, 70 % en entreprise</span>
+			<span class="number">#03</span>
+		</div>
+		<div class="cell-big border-sides no-grid">
+			<a href="http://www.com2web.iut-tlse3.fr/" target="_blank" class="external-link">Plus de renseignements sur le site de la licence</a>
+		</div>
+	</div>
+	
+
+
+</div>
+		<span id="logo">mmi</span>
+		<button class="back-home" id="backHome2"><span class="legal">© 2018 - MMI Castres</span>Retour Accueil <img src="./MMI Castres - Le site du département MMI à Castres_files/arrow-backlink.svg"></button>
+		<div class="deco-gradient"></div>
+	</div><!-- /content__item -->
+	<div class="content__item">
+		<div class="content__item-intro">
+	<img class="content__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/3.jpg" alt="Some image">
+	<h2 class="content__item-title"><span class="char1">L</span><span class="char2">P</span><span class="char3"> </span><span class="char4">D</span><span class="char5">R</span><span class="char6">E</span><span class="char7">A</span><span class="char8">M</span></h2>
+	<span class="page-subtitle">Licence Pro Design et Réalisation d'Applications Mobiles</span>
+</div>
+<h3 class="content__item-subtitle">Une formation entièrement dédiée au développement d’applications mobiles.</h3>
+<div class="content__item-text">
+
+	<p>Elle forme des professionnels de la conception, du design et de la réalisation d’applications mobiles.</p>
+	<p>Elle conduit aux métiers de <span class="overline overline-blue">développeur d'applications mobiles, développeur Android, développeur iOS</span>.</p>
+	<p> Pendant 12 mois, vous alternez période en <span class="overline overline-blue">entreprise et cours théoriques</span> ou de spécialisation afin d'être en parfaite adéquation avec les besoins et réalités du numérique.</p>
+	
+	<div class="cell-big border-sides no-grid">
+			<a href="http://www.dream.iut-tlse3.fr/" target="_blank" class="external-link">Plus de renseignements sur le site de la DReAM</a>
+	</div>
+
+	<h4 class="competences-bg">Compétences</h4>
+	<ul>
+		<li><span class="overline overline-blue">Développer une application mobile</span> en maîtrisant les langages de programmation (applications natives en <span class="overline overline-blue">Java/Kotlin/Android</span> et <span class="overline overline-blue">Swift/iOS</span> &amp; applications génériques à l’aide de <span class="overline overline-blue">Ionic</span>, <span class="overline overline-blue">React Native</span> et Xamarin/C#)</li>
+		<li>Concevoir une interface graphique adaptée à l’expérience utilisateur et spécifique à la mobilité</li>
+		<li>Utiliser les environnements et les outils liés aux terminaux mobiles (Android Studio, XCode, …)</li>
+		<li>Déployer une application en utilisant les différentes plateformes de distribution d’applications (Apple Store, Google Play, …).</li>
+	</ul>
+	<h4>UN PROGRAMME PROFESSIONNALISANT</h4>
+	<span class="intro-p">La formation est proposée en alternance (contrat de professionnalisation et contrat d'apprentissage).</span>
+	<p>Sous le statut de salarié, vous alternez les périodes d’enseignement et les périodes en entreprise (dont une période d’au moins 6 mois en fin de formation). <br>
+		Une unité d'enseignement est entièrement consacrée à votre accompagnement professionnel.
+	</p>
+
+	<h4 class="circle-bg">L’ALTERNANCE</h4>
+	<p>L’alternance est une première expérience professionnelle (7 mois) <span class="overline overline-blue">amenant souvent à une embauche</span>. Elle permet de confronter les enseignements universitaires et les pratiques professionnelles.</p>
+	<p>La durée des périodes en entreprise vous permet d'<span class="overline overline-blue">être impliqué dans des projets réels</span> et de maîtriser les outils de gestion de projets de l'entreprise.</p>
+
+	<div class="table-large-custom">
+		<div class="cell-big">
+			<span class="desc"> Contrat de professionnalisation ou d'apprentissage d'un an</span>
+			<span class="number">#01</span>
+		</div>
+		<div class="cell-big border-sides">
+			<span class="desc">Rémunération à partir de 65% du SMIC</span>
+			<span class="number">#02</span>
+		</div>
+		<div class="cell-big border-sides">
+			<span class="desc">30 % du temps en formation, 70 % en entreprise</span>
+			<span class="number">#03</span>
+		</div>
+		<div class="cell-big border-sides">
+			<span class="desc">Journées "speed alternance" (mise en relation entreprise - étudiant) et suivi personnalisé</span>
+			<span class="number">#04</span>
+		</div>
+		<div class="cell-big border-sides no-grid">
+			<a href="http://www.dream.iut-tlse3.fr/" target="_blank" class="external-link">Plus de renseignements sur le site de la DReAM</a>
+		</div>
+	</div>
+
+</div>
+		<span id="logo">mmi</span>
+		<button class="back-home" id="backHome3"><span class="legal">© 2018 - MMI Castres</span>Retour Accueil <img src="./MMI Castres - Le site du département MMI à Castres_files/arrow-backlink.svg"></button>
+		<div class="deco-gradient"></div>
+	</div><!-- /content__item --> 
+	<div class="content__item">
+		<div class="content__item-intro">
+	<img class="content__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/4.jpg" alt="Some image">
+	<h2 class="content__item-title"><span class="char1">C</span><span class="char2">O</span><span class="char3">M</span><span class="char4">P</span><span class="char5">É</span><span class="char6">T</span><span class="char7">E</span><span class="char8">N</span><span class="char9">C</span><span class="char10">E</span><span class="char11">S</span></h2>
+</div>
+<h3 class="content__item-subtitle">Des formations pour acquérir des compétences en ...</h3>
+<span class="intro-p">Développement web front end &amp; mobile</span>
+	<div class="table-custom table-competences">
+		<div class="cell-big border-top">
+			<span class="name">HTML / CSS<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Construire l'architecture du site web et intégrer la charte graphique</span>
+		</div>
+		<div class="cell-big border-sides border-top">
+			<span class="name">Javascript / jQuery<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Rendre le site web plus dynamique en y intégrant des API</span>
+		</div>
+		<div class="cell-big border-top">
+			<span class="name">ReactJS<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Développer des applications web à base de composants</span>
+		</div>
+		<div class="cell-big no-border-bottom">
+			<span class="name">Wordpress / Drupal<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Mettre en ligne et configurer un site web en utilisant un CMS</span>
+		</div>
+		<div class="cell-big border-sides no-border-bottom">
+			<span class="name">Prestahop<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Mettre en ligne et gérer un site de e-commerce en utilisant un CMS adapté</span>
+		</div>
+		<div class="cell-big no-border-bottom">
+			<span class="name">React Native<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Développer une application mobile</span>
+		</div>
+	</div>
+<span class="intro-p"><br>Développement web backend</span>
+	<div class="table-custom table-competences">
+		<div class="cell-big border-top">
+			<span class="name">MySQL, Oracle, MongoDB<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Gérer les données d'un site ou d'une application web en utlisant une base de données SQL ou noSQL</span>
+		</div>	
+		<div class="cell-big border-sides border-top">
+			<span class="name">PHP<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Développer une application web en lien avec une base de données</span>
+		</div>
+		<div class="cell-big border-top">
+			<span class="name">NodeJS<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Développer le backend en javascript</span>
+		</div>	
+	</div>
+<span class="intro-p"><br>Infographie 2D/3D</span>
+	<div class="table-custom table-competences">
+		<div class="cell-big border-top">
+			<span class="name">Photoshop, Illustrator<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Retoucher et composer des images, dessin vetoriel et illustration</span>
+		</div>	
+		<div class="cell-big border-sides border-top">
+			<span class="name">InDesign<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Créer des mises en page pour l'impression et la publication numérique</span>
+		</div>	
+		<div class="cell-big border-top">
+			<span class="name">Charte graphique<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Concevoir une charte graphique, création de logos</span>
+		</div>
+		<div class="cell-big">
+			<span class="name">Web design<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Pour ...</span>
+		</div>
+		<div class="cell-big border-sides ">
+			<span class="name">After effect, Motion design<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Créer des oeuvres animées</span>
+		</div>
+		<div class="cell-big">
+			<span class="name">Adobe <span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Pour créer des oeuvres animées</span>
+		</div>
+	</div>
+
+<span class="intro-p"><br>Audiovisuel</span>
+	<div class="table-custom table-competences">
+		<div class="cell-big border-top">
+			<span class="name">XXX<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Pour </span>
+		</div>	
+		<div class="cell-big border-sides border-top">
+			<span class="name">XXX<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Pour </span>
+		</div>
+		<div class="cell-big border-top">
+			<span class="name">XXX<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Pour ...</span>
+		</div>	
+	</div>
+<span class="intro-p">En construction...</span>
+<!--
+<div class="content__item-text">
+	<div class="table-custom table-competences">
+		<div class="cell-big">
+			<span class="name">Com & Marketing<span class="underline"><img src="img/departement/underline.jpg" alt=""></span></span>
+			<span class="activity">Pour se situer et évoluer dans les modèles de l’information et de la communication</span>
+		</div>
+		<div class="cell-big border-sides">
+			<span class="name">Gestion de projet<span class="underline"><img src="img/departement/underline.jpg" alt=""></span></span>
+			<span class="activity">Pour apprendre à travailler en équipe, estimer la quantité de travail et organiser les tâches pour répondre aux délais.</span>
+		</div>
+		<div class="cell-big">
+			<span class="name">UI & UX<span class="underline"><img src="img/departement/underline.jpg" alt=""></span></span>
+			<span class="activity">Pour apprendre à utiliser les principaux logiciels de PAO et penser une interface ergonomique et optimisé pour l’utilisateur.</span>
+		</div>
+		<div class="cell-big  no-border-bottom">
+			<span class="name">AUDIO & Video<span class="underline"><img src="img/departement/underline.jpg" alt=""></span></span>
+			<span class="activity">Pour apprendre les bases de l’audiovisuel, en prise de vue/son et traitements en post productions tels que le montage et l’habillages.</span>
+		</div>
+		<div class="cell-big border-sides no-border-bottom">
+			<span class="name">Développement<span class="underline"><img src="img/departement/underline.jpg" alt=""></span></span>
+			<span class="activity">Pour découvrir les bases de l'algorithmique et les langages de l’intégration web (HTML, CSS, JS), les systèmes de gestions de contenus ainsi que les normes du web.</span>
+		</div>
+		<div class="cell-big no-border-bottom">
+			<span class="name">Culture Générale<span class="underline"><img src="img/departement/underline.jpg" alt=""></span></span>
+			<span class="activity">Pour obtenir un large savoir sur l’ensemble des métiers autour du web et de la communication.</span>
+		</div>
+	</div>
+</div>
+-->		<span id="logo">mmi</span>
+		<button class="back-home" id="backHome4"><span class="legal">© 2018 - MMI Castres</span>Retour Accueil <img src="./MMI Castres - Le site du département MMI à Castres_files/arrow-backlink.svg"></button>
+		<div class="deco-gradient"></div>
+	</div><!-- /content__item -->
+	<div class="content__item">
+		<div class="content__item-intro">
+	<img class="content__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/5.jpg" alt="Some image">
+	<h2 class="content__item-title"><span class="char1">D</span><span class="char2">é</span><span class="char3">p</span><span class="char4">a</span><span class="char5">r</span><span class="char6">t</span><span class="char7">e</span><span class="char8">m</span><span class="char9">e</span><span class="char10">n</span><span class="char11">t</span></h2>
+</div>
+<h3 class="content__item-subtitle">L’équipe pédagogique de l’IUT de Castres.</h3>
+<div class="content__item-text">
+	<p>Pour préparer nos étudiants aux métiers du web dans les secteurs du développement et de l’intégration web, de l’infographie, du marketing ou de la communication, notre équipe pluridisciplinaire est constituée d'enseignants, d'intervenants professionnels et de personnels administratifs et techniques.</p>
+	<span class="intro-p">Le comité de pilotage</span>
+	<div class="table-custom table-departement">
+		<div class="cell-big cell-hover-left border-top icon-informatique">
+			<span class="name">Sylvie TROUILHET<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Informatique, Chef de département MMI</span>
+
+			<div class="socialNetworks">
+				<a href="https://www.linkedin.com/in/sylvie-trouilhet-9b970a151/">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z"></path>
+						</g>
+					</svg>
+				</a>
+<!--
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+-->
+			</div>
+
+		</div>
+		<div class="cell-big border-sides cell-hover-center border-top icon-anglais">
+			<span class="name">Anne Sombart<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Anglais, Chef de département adjointe, directrice des études</span>
+
+			<div class="socialNetworks">
+				<a href="https://www.linkedin.com/in/anne-sombart-749948112/">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z"></path>
+						</g>
+					</svg>
+				</a>
+<!--
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+-->
+			</div>
+
+		</div>
+		<div class="cell-big  cell-hover-right border-top icon-informatique">
+			<span class="name">Jean-Marie pécatte<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Informatique, Chef de département adjoint, responsable LP DReAM</span>
+
+			<div class="socialNetworks">
+				<a href="https://www.linkedin.com/in/jeanmariepecatte/">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z"></path>
+						</g>
+					</svg>
+				</a>
+<!--
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+-->
+			</div>
+
+		</div>
+	</div>
+	<h4> </h4>
+	<span class="intro-p">L'équipe administrative et technique</span>
+	<div class="table-custom table-departement">
+		<div class="cell-big cell-hover-left border-top icon-secretariat">
+			<span class="name">Marie Assié<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Secrétariat</span>
+<!--
+			<div class="socialNetworks">
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z" />
+						</g>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+-->
+		</div>
+		<div class="cell-big border-sides cell-hover-center border-top icon-comptabilite">
+			<span class="name">Jean-Luc BOYER<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Comptabilité</span>
+<!--
+			<div class="socialNetworks">
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z" />
+						</g>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+-->
+		</div>
+		<div class="cell-big cell-hover-right border-top icon-informatique">
+			<span class="name">Morad Zeghbab<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Centre de ressources informatiques</span>
+<!--
+			<div class="socialNetworks">
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z" />
+						</g>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+-->
+		</div>
+	</div>
+	<h4> </h4>
+	<span class="intro-p">L'équipe enseignante</span>
+	<div class="table-custom table-departement">
+		<div class="cell-big cell-hover-left border-top icon-communication">
+			<span class="name">Audrey Arnoult<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Information-Communication</span>
+<!--
+			<div class="socialNetworks">
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z" />
+						</g>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+-->
+		</div>
+		<div class="cell-big  border-sides cell-hover-center border-top icon-reseaux">
+			<span class="name">Sylvain Barreau<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Réseaux, directeur des études</span>
+
+			<div class="socialNetworks">
+				<a href="https://www.linkedin.com/in/sylvain-barreau-1a530544/">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z"></path>
+						</g>
+					</svg>
+				</a>
+<!--
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+-->
+		</div>
+
+		</div>
+		<div class="cell-big cell-hover-right border-top icon-communication">
+			<span class="name">Alma Betbout<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Information-Communication</span>
+
+			<div class="socialNetworks">
+				<a href="https://www.linkedin.com/in/alma-betbout-17a965142/">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z"></path>
+						</g>
+					</svg>
+				</a>
+<!--
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+-->
+			</div>
+
+		</div>
+		<div class="cell-big cell-hover-left icon-communication">
+			<span class="name">Audrey de Ceglie<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Information-Communication</span>
+<!--
+			<div class="socialNetworks">
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z" />
+						</g>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+-->
+		</div>
+		<div class="cell-big border-sides cell-hover-center icon-audiovisuel">
+			<span class="name">Charles Duranton<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Audiovisuel</span>
+
+			<div class="socialNetworks">
+				<a href="https://www.linkedin.com/in/charles-duranton-3a46ab45/">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z"></path>
+						</g>
+					</svg>
+				</a>
+<!--
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+-->
+			</div>
+
+		</div>
+		<div class="cell-big cell-hover-right">
+			<span class="name">Patricia Gendrey<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Marketing</span>
+
+			<div class="socialNetworks">
+				<a href="https://www.linkedin.com/in/patriciagendrey-edition/">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z"></path>
+						</g>
+					</svg>
+				</a>
+<!--
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+-->
+			</div>
+
+		</div>
+		<div class="cell-big cell-hover-left icon-communication">
+			<span class="name">Sylvia Gourion<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Communication</span>
+<!--
+			<div class="socialNetworks">
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z" />
+						</g>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+-->
+		</div>
+		<div class="cell-big border-sides cell-hover-center icon-audiovisuel">
+			<span class="name">Benjamin Montaud<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Stratégie digitale</span>
+
+			<div class="socialNetworks">
+				<a href="https://www.linkedin.com/in/benjamin-montaud-950a8615/">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z"></path>
+						</g>
+					</svg>
+				</a>
+<!--
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+-->
+			</div>
+
+		</div>
+		<div class="cell-big cell-hover-right icon-informatique">
+			<span class="name">Vincent Séguier<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Intégration web</span>
+<!--
+			<div class="socialNetworks">
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z" />
+						</g>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+-->
+		</div>
+		<div class="cell-big cell-hover-left no-border-bottom icon-communication">
+			<span class="name">Nikos Smyrnaïos<span class="underline"><img src="./MMI Castres - Le site du département MMI à Castres_files/underline.jpg" alt=""></span></span>
+			<span class="activity">Information-Communication</span>
+
+			<div class="socialNetworks">
+<!--
+				<a href="#">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+						<g>
+							<path class="socialNetworks-logo-path" id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+								c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+								v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+								C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+								c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+								M5.477,420.56h92.184v-277.32H5.477V420.56z" />
+						</g>
+					</svg>
+				</a>
+-->
+				<a href="https://twitter.com/smykos">
+					<svg class="socialNetworks-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+						<g>
+							<g>
+								<path class="socialNetworks-logo-path" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+								c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+								c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+								c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+								c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+								c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+								c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z"></path>
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="cell-big border-sides no-border-bottom no-border-right cell-hover-no">
+
+		</div>
+	</div>
+
+
+</div>
+		<span id="logo">mmi</span>
+		<button class="back-home" id="backHome5"><span class="legal">© 2018 - MMI Castres</span>Retour Accueil <img src="./MMI Castres - Le site du département MMI à Castres_files/arrow-backlink.svg"></button>
+		<div class="deco-gradient"></div>
+	</div><!-- /content__item -->
+	<div class="content__item">
+		<div class="content__item-intro">
+	<img class="content__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/6.jpg" alt="Some image">
+	<h2 class="content__item-title"><span class="char1">D</span><span class="char2">é</span><span class="char3">b</span><span class="char4">o</span><span class="char5">u</span><span class="char6">c</span><span class="char7">h</span><span class="char8">é</span><span class="char9">s</span></h2>
+</div>
+<h3 class="content__item-subtitle">Quelles suites possibles à l’aventure MMI ?</h3>
+
+<div class="content__item-text">
+
+	<h4>Après le DUT MMI</h4>
+	<p>L'insertion professionnelle directe est bien sur possible, mais le DUT étant très pluridisciplinaire, les étudiants completent souvent leur formation par au moins une année de spécalisation.</p>
+	<!--<img src="img/anim-mmi.gif" alt=""  class="img-centered">-->
+	<span class="intro-p">Cycle licence professionnelle</span>
+	<ul>
+		<li><span class="first-word">Com2web</span> Communication digitale et webmastering (Castres) <a href="http://www.com2web.iut-tlse3.fr/" target="_blank" class="external-link">plus d'infos ?</a></li>
+		<li><span class="first-word">DReAM</span> Design et réalisation d'applications mobiles (Castres) <a href="http://www.dream.iut-tlse3.fr/" target="_blank" class="external-link">plus d'infos ?</a></li>
+		<li><span class="first-word">Création graphique</span> (ENSAV Castres) <a href="http://www.esav.fr/la-formation/cursus-diplomes/licence-pro-creation-infographique/" target="_blank" class="external-link">plus d'infos ?</a></li>
+		<li>De nombreuses autres lpro dans les depts MMI en France... <a href="http://iutmmi.fr/integrer-une-formation-mmi/inscriptions-licence-pro/" target="_blank" class="external-link">Carte des lpro ?</a>&lt;</li>
+
+		
+	</ul> 
+	<span class="intro-p">Cycle universitaire LMD</span>
+	<ul>
+		<li>Licence Information-Communication <a href="http://www.univ-tlse3.fr/licences-+/licence-mention-information-communication--604685.kjsp?RH=1454074064222" target="_blank" class="external-link">plus d'infos à l'UPS à Toulouse ?</a></li>
+		<li>Licence Informatique <a href="http://www.univ-tlse3.fr/licences/licence-mention-informatique--619272.kjsp?RH=1455714485463" target="_blank" class="external-link">plus d'infos à l'UPS à Toulouse ?</a>
+			<a href="https://www.univ-jfc.fr/licences/informatique" target="_blank" class="external-link">plus d'infos à l'INU à Albi ?</a></li>
+			
+		<li>...</li>
+	</ul>
+	<span class="intro-p">Cycle écoles d'ingénieurs</span>
+	<ul>
+		<li><span class="first-word">ISIS</span> - Informatique et Systèmes d'Information pour la Santé (Castres) <a href="https://isis.univ-jfc.fr/" target="_blank" class="external-link">plus d'infos ?</a></li>
+		<li><span class="first-word">IMAC</span> - Informatique, Multimédia, Audiovisuel, Communication (Marne la Vallée) <a href="https://www.ingenieur-imac.fr/" target="_blank" class="external-link">plus d'infos ?</a></li>
+		<li>le réseau Polytech - <a href="http://www.mmi.iut-tlse3.fr/www.polytech-reseau.org" target="_blank" class="external-link">plus d'infos ?</a></li>
+		<li>...</li>
+	</ul>
+
+	<h4>Après la LP COM2WEB</h4>
+	<p>La licence Com2Web favorise l’insertion professionnelle: <span class="overline overline-green">76% des étudiants</span> trouvent un emploi au plus tard 30 mois après la formation <span class="overline overline-green">(85% en CDI, 15% en CDD)</span>. </p>
+	<p>En moyenne, les étudiants accèdent à leur premier emploi 4 mois et demi après le début de leurs recherches. Le salaire net mensuel moyen qu’ils obtiennent pour leur premier emploi est d’environ 1460€.</p>
+	<p>Les débouchés de cette licence sont nombreux en fonction de la spécialisation et du parcours de chaque étudiant: <span class="overline overline-green">Responsable de communication digitale</span> / Webmarketeur / Community manager / Infographiste / Rédacteur de contenus / Webmaster / Chef de projet e-commerce / ...
+	</p>
+	<a href="http://www.mmi.iut-tlse3.fr/com2web/" target="_blank" class="external-link">VOIR LA DESCRIPTION COMPLETE</a>
+
+	<h4>Après la LP DREAM</h4>
+	<p>La licence DReAM vise uniquement l’insertion professionnelle directe : 6 mois après la diplomation, <span class="overline overline-green">75% des étudiants</span> occupent un <span class="overline overline-green">emploi en CDI </span>.</p>
+	<p>Quasiment tous les secteurs d'activités sont concernés par les applications mobiles : les fabricants de produit de grande consommation, le tourisme, la distribution, les banques de détail, le secteur de la construction... S'y ajoutent toutes les Entreprises de Services du Numérique (ESN). <br>
+	</p><p>
+		Les postes visés à l'issue de la licence sont : <span class="overline overline-green">développeur d’applications mobiles</span>, développeur Android, développeur iOS, ...
+	</p>
+	<a href="http://www.dream.iut-tlse3.fr/" target="_blank" class="external-link">VOIR LA DESCRIPTION COMPLETE</a>
+</div>
+		<span id="logo">mmi</span>
+		<button class="back-home" id="backHome6"><span class="legal">© 2018 - MMI Castres</span>Retour Accueil <img src="./MMI Castres - Le site du département MMI à Castres_files/arrow-backlink.svg"></button>
+		<div class="deco-gradient"></div>
+	</div><!-- /content__item -->
+	<div class="content__item">
+		<div class="content__item-intro">
+	<img class="content__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/7.jpg" alt="Some image">
+	<h2 class="content__item-title"><span class="char1">P</span><span class="char2">o</span><span class="char3">s</span><span class="char4">t</span><span class="char5">u</span><span class="char6">l</span><span class="char7">e</span><span class="char8">r</span></h2>
+</div>
+<h3 class="content__item-subtitle">Comment déposer sa candidature pour une formation MMI</h3>
+<div class="content__item-text">
+	<h4>ENTRER EN DUT MMI</h4>
+	<p>Vous êtes titulaire du baccalauréat ou actuellement en terminale pour préparer le baccalauréat : vous pouvez entrer à l'IUT par la voie classique pour préparer un DUT.</p>
+	<ul>
+		<li><span class="first-word">Nombre</span> de places en 1ère année de DUT = <span class="overline overline-yellow ">56</span></li>
+		<li><span class="first-word">Type</span> de bac : <span class="overline overline-yellow ">Bac général et technologique</span> avec un nombre de places réservés pour chaque groupe de bac</li>
+		<li><span class="first-word">Éléments</span> pris en compte : <span class="overline overline-yellow ">notes de 1ère et notes de terminale</span></li>
+		<li><span class="first-word">Entretien</span> : pas systématique</li>
+	</ul>
+	<p>Vous devez candidater sur le portail national Parcoursup pour une rentrée en septembre.</p>
+	<a href="https://www.parcoursup.fr/" target="_blank" class="external-link">portail national Parcoursup </a>
+
+
+	<h4>ENTRER EN LICENCE PROFESSIONNELLE</h4>
+	<span class="intro-p">L’admission en licence professionnelle est ouverte :
+	</span>
+	<ul>
+		<li><span class="first-word">Aux</span> candidats titulaires d'un diplôme de niveau au moins égal à <span class="overline overline-yellow">BAC + 2 (DUT, BTS, L2)</span></li>
+		<li><span class="first-word">Par</span> la Validation d'Acquis</li>
+		<li><span class="first-word">En</span> formation initiale ou en formation continue</li>
+		<li><span class="first-word">Le recrutement</span> se fait sur <span class="overline overline-yellow">dossier</span> (notes du bac et des études post-bac, cv, lettre de motivation, ...) complété eventuellement par un entretien</li>
+		<li><span class="first-word">Les</span> dates de candidatures dépendent des LP</li>
+	</ul>
+	<div class="cell-big border-sides no-grid">
+			<a href="https://ecandidat.iut-mpy.fr/" target="_blank" class="external-link">Candidater en ligne</a>
+	</div>
+	<div class="cell-big border-sides no-grid">
+		<a href="http://iut.ups-tlse.fr/pour-preparer-une-licence-professionnelle-lp--460875.kjsp?RH=1213188826659&amp;RF=1384505322231" target="_blank" class="external-link">Plus de renseignements sur le site de l’iut</a>
+	</div>
+	<!--
+	<span class="intro-p">L’entrée en LP se déroule en 3 étapes : </span>
+
+	<div class="table-large-custom">
+		<div class="cell-big">
+			<span class="desc">Candidature pour être admis à l’IUT, sur dossier</span>
+			<span class="number">#01</span>
+		</div>
+		<div class="cell-big border-sides">
+			<span class="desc">L’admission : à la fin du mois de juin, les candidats prennent connaissance des résultats de leur candidature et, s'ils sont admis, ils confirment leurs choix et prennent un rendez-vous pour s'inscrire</span>
+			<span class="number">#02</span>
+		</div>
+		<div class="cell-big border-sides">
+			<span class="desc">L'inscription, lorsque la candidature a été retenue. Au mois de juillet, les candidats admis viennent à l'IUT, munis de leur dossier d'inscription pour procéder à leur inscription au titre de la prochaine année universitaire.</span>
+			<span class="number">#03</span>
+		</div>
+
+
+	</div>
+-->
+	
+</div>
+		<span id="logo">mmi</span>
+		<button class="back-home" id="backHome7"><span class="legal">© 2018 - MMI Castres</span>Retour Accueil <img src="./MMI Castres - Le site du département MMI à Castres_files/arrow-backlink.svg"></button>
+		<div class="deco-gradient"></div>
+	</div><!-- /content__item -->
+	<div class="content__item">
+		<div class="content__item-intro">
+	<img class="content__item-img" src="./MMI Castres - Le site du département MMI à Castres_files/8.jpg" alt="Some image">
+	<h2 class="content__item-title"><span class="char1">L</span><span class="char2">e</span><span class="char3"> </span><span class="char4">c</span><span class="char5">a</span><span class="char6">m</span><span class="char7">p</span><span class="char8">u</span><span class="char9">s</span></h2>
+	<span class="page-subtitle">La vie étudiante à Castres-Mazamet</span>
+</div>
+<h3 class="content__item-subtitle">Près de 2000 étudiants sur l'agglomération Castres-Mazamet</h3>
+<p>Créé en 1992, l’IUT de Castres est en fait une antenne de <span class="overline overline-green">l’IUT Paul Sabatier (Toulouse, Castres, Auch)</span> lui même composante de l’Université Paul Sabatier.</p>
+<p>A Castres, l’offre de formation de l’IUT est composée de 4 DUT (Chimie, Packaging, Techniques de Commercialisation et MMI) et 7 Licences professionnelles, soit environ 500 étudiants.</p>
+
+<p>L’IUT est situé sur le <span class="overline overline-green">campus universitaire de la Borde Basse</span> à 10mn du centre de Castres.</p>
+<p>Le <span class="overline overline-green">restaurant universitaire, la résidence universitaire et la maison du campus</span> se trouvent à 10mn à pied de l'IUT.
+</p>
+<div class="content__item-text">
+	<img src="./MMI Castres - Le site du département MMI à Castres_files/map.jpg" alt="" class="img-centered">
+
+	<h4>VIE Étudiante</h4>
+	<p>Une large gamme d'activités sportives et culturelles, comme la<span class="overline overline-green">semaine de l’étudiant</span> est proposée aux étudiants du bassin Castres-Mazamet par l’association ACME [Association Castres Mazamet-Etudiant] mais aussi par de très nombreuses associations locales.</p>
+
+	<p>Le <span class="overline overline-green">portail web Etudiant</span> de l'agglomération Castres-Mazamet vous donne de nombreuses informations sur : </p>
+	
+	<ul>
+		<li><span class="first-word">l'hébergement</span> dans le parc privé et public</li>
+		<li><span class="first-word">Le campus</span> et les différents lieux d'études</li>
+		<li><span class="first-word">Les aides</span> CAF, bourses, transport,...</li>
+		<li><span class="first-word">Les loisirs</span> à faire lors du temps libre.</li>
+		<li><span class="first-word">La culture</span>, médiathèque, salle de concert et autre.</li>
+		<li><span class="first-word">Les Transports</span> comme les horaires de bus (gratuit).</li>
+	</ul>
+	<a href="http://www.etudier-castres-mazamet.com/" target="_blank" class="external-link">Toutes les informations</a>
+
+	<h4>LA VILLE DE CASTRES</h4>
+	<span class="intro-p">Patinoire, piscine, le sidobre, Castres olympique, le cinéma</span>
+
+</div>
+		<span id="logo">mmi</span>
+		<button class="back-home" id="backHome8"><span class="legal">© 2018 - MMI Castres</span>Retour Accueil <img src="./MMI Castres - Le site du département MMI à Castres_files/arrow-backlink.svg"></button>
+		<div class="deco-gradient"></div>
+	</div><!-- /content__item -->
+
+	<button class="content__close"><div id="containerBarre">
+	    <img id="barreTop" src="./MMI Castres - Le site du département MMI à Castres_files/barreTop.svg" alt=""><img id="barreBottom" src="./MMI Castres - Le site du département MMI à Castres_files/barreBottom.svg" alt="">
+	</div></button>
+	<svg class="content__indicator icon icon--caret">
+		<use xlink:href="#icon-caret"></use>
+	</svg>
+
+</div>
+
+    <script src="./MMI Castres - Le site du département MMI à Castres_files/preload.js"></script>
+    <script src="./MMI Castres - Le site du département MMI à Castres_files/jquery.min.js"></script>
+    <script src="./MMI Castres - Le site du département MMI à Castres_files/build_smooth_horizontal.js"></script>
+
+    <script src="./MMI Castres - Le site du département MMI à Castres_files/imagesloaded.pkgd.min.js"></script>
+    <script src="./MMI Castres - Le site du département MMI à Castres_files/masonry.pkgd.min.js"></script>
+    <script src="./MMI Castres - Le site du département MMI à Castres_files/charming.min.js"></script>
+    <script src="./MMI Castres - Le site du département MMI à Castres_files/TweenMax.min.js"></script>
+
+    <script src="./MMI Castres - Le site du département MMI à Castres_files/script.js"></script>
+    <!--    <script src="./js/dev/cartes.js"></script>-->
+
+
+
+
+<div class="vs-scrollbar vs-horizontal vs-scrollbar-smooth"><div class="vs-scrolldrag" style="width: 94.6057px; transform: translate3d(0px, 0px, 0px);"></div></div></body></html>
