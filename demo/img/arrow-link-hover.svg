@@ -1,18 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>Fleche</title>
-    <desc>Created with Sketch.</desc>
-    <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="LP-Com2WEB" transform="translate(-1062.000000, -6629.000000)" stroke="#870000" stroke-width="2.70000005">
-            <g id="Group-2" transform="translate(-11.000000, 6539.808976)">
-                <g id="Group" transform="translate(372.500000, 83.444568)">
-                    <g id="Fleche" transform="translate(708.606560, 14.248467) scale(-1, 1) translate(-708.606560, -14.248467) translate(701.106560, 6.748467)">
-                        <polyline id="Stroke-1" points="14.6870997 0.371654755 0.116791074 0.371654755 0.116791074 14.9419634"></polyline>
-                        <path d="M0.116393695,0.371654755 L14.3306505,14.5859116" id="Stroke-3"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+<title>Fleche</title>
+<desc>Created with Sketch.</desc>
+<g id="_x2D_">
+	<g id="LP-Com2WEB" transform="translate(-1062.000000, -6629.000000)">
+		<g id="Group-2" transform="translate(-11.000000, 6539.808976)">
+			<g id="Group" transform="translate(372.500000, 83.444568)">
+				
+					<g id="Fleche" transform="translate(708.606560, 14.248467) scale(-1, 1) translate(-708.606560, -14.248467) translate(701.106560, 6.748467)">
+					<polyline id="Stroke-1" fill="none" stroke="#1E7498" stroke-width="2.7" points="14.687,0.372 0.116,0.372 0.116,14.942 					
+						"/>
+					<path id="Stroke-3" fill="none" stroke="#1E7498" stroke-width="2.7" d="M0.116,0.372l14.214,14.214"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>
