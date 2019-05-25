@@ -108,7 +108,7 @@ function loading() {
 
         $('#pourcentLoader').html(parseInt(event.progress * 100) + "%");
         $('#bgLoaderBlanc').css(
-            "width", (event.progress * 200)
+            "width", (event.progress * 800)
         );
     }
     //function handleFileLoad(event) { //console.log('  while loading')}
