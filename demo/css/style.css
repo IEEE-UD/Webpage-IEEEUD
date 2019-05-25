@@ -272,7 +272,7 @@ html {
     display: block;
     width: 100vw;
     height: 120vh;
-    background: black;
+    background: #1E7498;
     position: fixed;
     top: -10vh;
     left: 0;
@@ -282,8 +282,8 @@ html {
     align-items: center;
     overflow: hidden; }
     #loader #containerLoader {
-      width: 201px;
-      height: 60px;
+      width: 804px;
+      height: 240px;
       background: #393939;
       position: absolute;
       top: 50%;
@@ -292,7 +292,7 @@ html {
       #loader #containerLoader #bgLoaderBlanc {
         position: absolute;
         background: white;
-        height: 60px;
+        height: 240px;
         width: 100%;
         margin: 0px;
         box-sizing: border-box; }
@@ -543,7 +543,7 @@ html {
   
   #scrollToCards {
     color: white;
-    background: black;
+    background: #1E7498;
     font-family: 'extra';
     font-size: 12px;
     font-weight: bold;
@@ -664,7 +664,7 @@ html {
       margin-bottom: 20px; }
     #contact .mail {
       margin-left: 40%;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       font-family: 'titreRegular';
       font-weight: normal;
       font-style: normal;
@@ -674,13 +674,13 @@ html {
       color: #171717;
       display: block; }
       #contact .mail {
-        font-size: 24px; }
+        font-size: 20px; }
         @media screen and (min-width: 320px) {
           #contact .mail {
-            font-size: calc(24px + 56 * ((100vw - 320px) / 880)); } }
+            font-size: calc(20px + 56 * ((100vw - 320px) / 880)); } }
         @media screen and (min-width: 1200px) {
           #contact .mail {
-            font-size: 80px; } }
+            font-size: 60px; } }
       #contact .mail:hover {
         color: #870000; }
     #contact .telephone {
@@ -1460,7 +1460,7 @@ html {
     bottom: -15px;
     margin: 0 0 0 1rem;
     transform-origin: 0 50%;
-    font-size: 37px;
+    font-size: 30px;
     font-family: 'titreBold';
     color: black;
     z-index: 3; }
@@ -1828,7 +1828,7 @@ html {
         right: -20px; } } }
   
   html {
-    background: black;
+    background: #1E7498;
     cursor: url("../img/cursor.svg"), auto; }
   
   a:hover, button:hover {
