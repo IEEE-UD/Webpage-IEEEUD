@@ -11,9 +11,9 @@
 			<g id="Group" transform="translate(372.500000, 83.444568)">
 				
 					<g id="Fleche" transform="translate(708.606560, 14.248467) scale(-1, 1) translate(-708.606560, -14.248467) translate(701.106560, 6.748467)">
-					<polyline id="Stroke-1" fill="none" stroke="#1E7498" stroke-width="2.7" points="14.687,0.372 0.116,0.372 0.116,14.942 					
+					<polyline id="Stroke-1" fill="none" stroke="#FFFFFF" stroke-width="2.7" points="14.687,0.372 0.116,0.372 0.116,14.942 					
 						"/>
-					<path id="Stroke-3" fill="none" stroke="#1E7498" stroke-width="2.7" d="M0.116,0.372l14.214,14.214"/>
+					<path id="Stroke-3" fill="none" stroke="#FFFFFF" stroke-width="2.7" d="M0.116,0.372L14.33,14.586"/>
 				</g>
 			</g>
 		</g>

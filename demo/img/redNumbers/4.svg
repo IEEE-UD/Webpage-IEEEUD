@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="158px" height="155px" viewBox="0 0 158 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>4</title>
-    <desc>Created with Sketch.</desc>
-    <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0">
-        <path d="M157.67,103.337079 L157.67,121.090079 L128.659,121.090079 L128.659,154.431079 L107.442,154.431079 L107.442,121.090079 L1.1405,121.090079 L1.1405,103.337079 L96.617,0.716079395 L128.659,0.716079395 L128.659,103.337079 L157.67,103.337079 Z M107.442,103.337079 L107.442,15.8710794 L25.8215,103.337079 L107.442,103.337079 Z" id="4" stroke="#870000" stroke-width="0.3" fill="#171717"></path>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="158px" height="155px" viewBox="0 0 158 155" enable-background="new 0 0 158 155" xml:space="preserve">
+<title>4</title>
+<desc>Created with Sketch.</desc>
+<g id="_x2D_">
+	<path id="_x34_" fill="none" stroke="#1E7498" stroke-width="0.3" d="M157.67,103.337v17.753h-29.011v33.342h-21.218V121.09H1.141
+		v-17.753L96.617,0.716h32.042v102.621H157.67z M107.441,103.337V15.871l-81.62,87.466H107.441z"/>
+</g>
 </svg>
