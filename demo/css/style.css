@@ -210,7 +210,7 @@ html {
       font-family: inherit; }
   
   a.link {
-    color: #870000;
+    color: #1E7498;
     text-decoration: underline; }
   
   button {
@@ -256,7 +256,7 @@ html {
           font-size: 24px; } }
   
   *::selection {
-    color: #870000;
+    color: #1E7498;
     background-color: transparent; }
   
   b {
@@ -464,7 +464,7 @@ html {
     position: fixed;
     width: 20vw;
     height: 20vw;
-    background: red;
+    background: #1E7498;
     z-index: 9999; }
   
   .title {
@@ -579,7 +579,7 @@ html {
         right: 10px;
         transition: ease 0.4s; }
     #scrollToCards:hover span {
-      color: #870000; }
+      color: #1E7498; }
       #scrollToCards:hover span img {
         transform: rotate(135deg); }
   
@@ -682,7 +682,7 @@ html {
           #contact .mail {
             font-size: 60px; } }
       #contact .mail:hover {
-        color: #870000; }
+        color: #1E7498; }
     #contact .telephone {
       padding-left: 10%;
       vertical-align: top;
@@ -707,7 +707,7 @@ html {
         font-family: 'titreRegular';
         color: #171717; }
         #contact .telephone a:hover {
-          color: #870000; }
+          color: #1E7498; }
     #contact .addresse {
       font-family: 'titreRegular';
       font-weight: normal;
@@ -915,13 +915,13 @@ html {
           #pages ul li {
             font-size: 31px; } }
       #pages ul li .first-word {
-        color: #870000; }
+        color: #1E7498; }
       #pages ul li:before {
         content: "";
         position: absolute;
         width: 25px;
         height: 2px;
-        background: #870000;
+        background: #1E7498;
         left: -50px;
         top: 30px; }
   
@@ -940,7 +940,7 @@ html {
     display: inline-block;
     text-align: left; }
     #pages .external-link:hover {
-      color: #870000; }
+      color: #1E7498; }
       #pages .external-link:hover:after {
         background-image: url(../img/arrow-link-hover.svg); }
     #pages .external-link:after {
@@ -1151,7 +1151,7 @@ html {
         fill: #B1B1B1; }
         #pages .table-departement .cell-big .socialNetworks-logo-path:hover {
           transition: ease 0.4s;
-          fill: #870000; }
+          fill: #1E7498; }
   
   #pages .table-departement .cell-big:hover {
     position: relative; }
@@ -1262,7 +1262,7 @@ html {
         #pages .back-home {
           font-size: 31px; } }
     #pages .back-home:hover {
-      background-color: #870000; }
+      background-color: #1E7498; }
     #pages .back-home:after {
       content: "";
       background-image: url(../img/logo_IUT_inverse.png);
@@ -1862,7 +1862,7 @@ html {
       will-change: transform;
       position: relative;
       background-color: transparent;
-      border: 1px solid #870000;
+      border: 1px solid #1E7498;
       width: 25px;
       height: 25px;
       border-radius: 50px;
