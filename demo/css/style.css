@@ -236,7 +236,8 @@ html {
       height: 35px; }
   
   .title {
-    font-size: 24px; }
+    font-size: 24px;
+    font-family: 'Quicksand'; }
     @media screen and (min-width: 320px) {
       .title {
         font-size: calc(24px + 56 * ((100vw - 320px) / 880)); } }
