@@ -2,6 +2,7 @@
 if (!isset($_POST['submit'])) {
     //This page should not be accessed directly. Need to submit the form.
     echo "error; you need to submit the form!";
+    exit;
 }
 $nombre = $_POST['nombre'];
 $codigo = $_POST['codigo'];
@@ -10,7 +11,7 @@ $carrera = $_POST['carrera'];
 $semestre = $_POST['semestre'];
 
 //Validate first
-if (empty($name) || empty($visitor_email)) {
+if (empty($nombre) || empty($visitor_email)) {
     echo "Todos los datos son obligatorios!";
     exit;
 }
