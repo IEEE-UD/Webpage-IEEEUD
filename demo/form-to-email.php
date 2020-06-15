@@ -4,10 +4,10 @@ if (!isset($_POST['submit'])) {
     echo "error; you need to submit the form!";
     exit;
 }
-$nombre = $_POST['nombre'];
-$codigo = $_POST['codigo'];
-$visitor_email = $_POST['email'];
-$carrera = $_POST['carrera'];
+$nombre = $_POST['Nombre'];
+$codigo = $_POST['Codigo'];
+$visitor_email = $_POST['correo'];
+$carrera = $_POST['Carrera'];
 $semestre = $_POST['semestre'];
 
 //Validate first
@@ -21,7 +21,7 @@ if (IsInjected($visitor_email)) {
     exit;
 }
 
-$email_from = 'contaco@ieee.udistrital.edu.co'; //<== update the email address
+$email_from = 'contacto@ieee.udistrital.edu.co'; //<== update the email address
 $email_subject = "Nuevo formulario";
 $email_body = "Un nuevo usuario se ha registrado: \n" .
     "Nombre: $nombre.\n" .
@@ -30,7 +30,7 @@ $email_body = "Un nuevo usuario se ha registrado: \n" .
     "Carrera: $carrera.\n" .
     "Semestre: $semestre.\n";
 
-$to = "rama.distrital@gmail.com, hollwann@gmail.com"; //<== update the email address
+$to = "ramaieeeud@udistrital.edu.co, rama.distrital@gmail.com"; //<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!

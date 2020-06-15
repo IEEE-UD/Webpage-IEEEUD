@@ -95,7 +95,7 @@
             <div class="flou"></div>
             <div class="wrapper">
                 <div class="grid-wrap">
-                    
+
                     <button id="contactZone">Contacto</button>
                     <button id="scrollToCards"><span><img src="img/arrow-link-hover.svg" alt=""> scroll</span></button>
                     <!--<span class="right-deco"><span>IEEE UD</span></span>-->
@@ -394,20 +394,23 @@
                 <span class="page-subtitle">Haz parte de nuestro equipo.</span>
             </div>
             <h3 class="content__item-subtitle">Formulario de inscripción</h3>
-            <div class="content__item-text">
+            <div class="form-register">
                 <form method="post" name="myemailform" action="form-to-email.php">
 
-                    <p>Nombre completo: <input type="text" name="nombre"></p>
+                    <input class="controls" type="text" name="Nombre" placeholder="Ingrese su Nombre completo">
 
-                    <p>Codigo estudiantil: <input type="number" name="codigo"></p>
+                    <input class="controls" type="text" name="Codigo" placeholder="Ingrese su Codigo estudiantil">
 
-                    <p>Correo electronico: <input type="text" name="email"></p>
+                    <input class="controls" type="email" name="correo" placeholder="Ingrese su Correo electronico">
 
-                    <p>Carrera a la que pertenece: <input type="text" name="carrera"></p>
+                    <input class="controls"type="text" name="Carrera" placeholder="Ingrese su programa Curricular">
 
-                    <p>Semestre: <input type="text" name="semestre"></p>
+                    <input class="controls" type="number" name="semestre" placeholder="Ingrese su Semestre en curso">
 
-                    <p><input type="submit" name="submit" value="Enviar"></p>
+                    <p> Estoy de acuerdo con <a href="">Terminos y Condiciones</a></p>
+
+                    <input class="botons" type="submit" name="submit" value="Enviar">
+
                 </form>
             </div>
             <span id="logo">IEEE UD</span>
