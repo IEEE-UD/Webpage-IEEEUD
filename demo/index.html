@@ -6,7 +6,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138955736-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-138955736-1');
@@ -35,12 +38,11 @@
 
     <script>
         document.documentElement.className = "js";
-        var supportsCssVars = function () {
+        var supportsCssVars = function() {
             var e, t = document.createElement("style");
             return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
         };
         supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-
     </script>
 </head>
 <div id="loader">
@@ -58,31 +60,17 @@
     <div class="vs-section">
         <div id="intro">
             <div class="wrapper">
-                <span class="legal">© 2019 - IEEE UD</span>
+                <span class="legal">© 2020 - IEEE UD</span>
                 <div>
                     <span id="logo">IEEE UD</span>
                     <!--	<button id="contactZone">contact</button>-->
                 </div>
                 <div id="titreSite">
-                    <h1 class="title">Rama Estudiantil <br>
-                        IEEE <br>
-                        Universidad Distrital <br>
-                        Francisco José <br>
-                        de Caldas
+                    <h1 class="title" style="text-align: center;">Rama Estudiantil <br> IEEE <br> Universidad Distrital <br> Francisco José <br> de Caldas
                     </h1>
-
-
                 </div>
-                <div class="home-img1">
-                    <img src="img/home/iut1.jpg" alt=""></div>
-                <div class="home-img2">
-                    <img src="img/home/iut2.jpg" alt=""></div>
-                <div class="home-img3">
-                    <img src="img/home/iut3.jpg" alt=""></div>
                 <div class="home-img4">
                     <img src="img/home/iut4.jpg" alt=""></div>
-                <!--<span class="right-deco"><span>IEEE UD</span></span>-->
-
                 <div data-speed=".20"></div>
             </div>
         </div>
@@ -91,18 +79,20 @@
             <div id="follower"></div>
         </div>
         <div id="cartes" class='calcWithVs'>
-
+            </nav>
             <div class="flou"></div>
             <div class="wrapper">
                 <div class="grid-wrap">
-                    
-                    <button id="contactZone">Contacto</button>
+
+                    <button id="contactZone">
+                        <h1>Contacto</h1>
+                    </button>
                     <button id="scrollToCards"><span><img src="img/arrow-link-hover.svg" alt=""> scroll</span></button>
                     <!--<span class="right-deco"><span>IEEE UD</span></span>-->
 
 
                     <div class="grid">
-                        <img src="img/home/deco1.jpg" alt="" class="imageDeco vs-div" data-speed="-0.13" id='deco1'>
+                        <img src="img/home/fondo.png" alt="" class="imageDeco vs-div" data-speed="-0.13" id='deco1'>
                         <button id="grid_01" class="grid__item grid__item--odd vs-div" data-speed="0.13">
                             <div class="grid__item-bg"></div>
                             <div class="grid__item-wrap">
@@ -114,19 +104,19 @@
                                 <p></p>
                             </div>
                         </button>
-                        <img src="img/home/deco2.jpg" alt="" class="imageDeco" id='deco2'>
+                        <img src="img/home/fondo.png" alt="" class="imageDeco" id='deco2'>
                         <button id="grid_02" class="grid__item grid__item--even vs-div" data-speed="0.13">
                             <div class="grid__item-bg"></div>
                             <div class="grid__item-wrap">
                                 <img class="grid__item-img" src="img/2.jpg" alt="Some image" />
                             </div>
-                            <h3 class="grid__item-title">¿QUIENES SOMOS?</h3>
+                            <h3 class="grid__item-title">¿QUIÉNES SOMOS?</h3>
                             <h4 class="grid__item-number">02</h4>
                             <div class="intro">
                                 <p></p>
                             </div>
                         </button>
-                        <img src="img/home/deco3.jpg" alt="" class="imageDeco" id='deco3'>
+                        <img src="img/home/fondo.png" alt="" class="imageDeco" id='deco3'>
                         <button id="grid_03" class="grid__item grid__item--odd vs-div" data-speed="0.13">
                             <div class="grid__item-bg"></div>
                             <div class="grid__item-wrap">
@@ -138,20 +128,20 @@
                                 <p>Nuestro poposito y mucho mas</p>
                             </div>
                         </button>
-                        <img src="img/home/deco4.jpg" alt="" class="imageDeco" id='deco4'>
+                        <img src="img/home/fondo.png" alt="" class="imageDeco" id='deco4'>
 
                         <button id="grid_04" class="grid__item grid__item--even vs-div" data-speed="0.13">
                             <div class="grid__item-bg"></div>
                             <div class="grid__item-wrap">
                                 <img class="grid__item-img" src="img/4.jpg" alt="Some image" />
                             </div>
-                            <h3 class="grid__item-title">¿DONDE ESTAMOS?</h3>
+                            <h3 class="grid__item-title">¿DÓNDE ESTAMOS?</h3>
                             <h4 class="grid__item-number">04</h4>
                             <div class="intro">
                                 <p></p>
                             </div>
                         </button>
-                        <img src="img/home/deco5.jpg" alt="" class="imageDeco" id='deco5'>
+                        <img src="img/home/fondo.png" alt="" class="imageDeco" id='deco5'>
 
                         <button id="grid_05" class="grid__item grid__item--odd vs-div" data-speed="0.13">
                             <div class="grid__item-bg"></div>
@@ -164,7 +154,7 @@
                                 <p>Fundada en 1962.</p>
                             </div>
                         </button>
-                        <img src="img/home/deco6.jpg" alt="" class="imageDeco" id='deco6'>
+                        <img src="img/home/fondo.png" alt="" class="imageDeco" id='deco6'>
 
                         <button id="grid_06" class="grid__item grid__item--even vs-div" data-speed="0.13">
                             <div class="grid__item-bg"></div>
@@ -177,7 +167,7 @@
                                 <p></p>
                             </div>
                         </button>
-                        <img src="img/home/deco7.jpg" alt="" class="imageDeco" id='deco7'>
+                        <img src="img/home/fondo.png" alt="" class="imageDeco" id='deco7'>
 
                         <button id="grid_07" class="grid__item grid__item--odd vs-div" data-speed="0.13">
                             <div class="grid__item-bg"></div>
@@ -205,7 +195,8 @@
                         </button>
 
                     </div>
-                </div><!-- /grid-wrap -->
+                </div>
+                <!-- /grid-wrap -->
             </div>
         </div>
         <div id="contact" class=''>
@@ -242,60 +233,104 @@
         <div class="content__item">
             <div class="content__item-intro">
                 <img class="content__item-img" src="img/1.jpg" alt="Some image" />
-                <h2 class="content__item-title">¿QUÉ SOMOS?</h2>
+                <h3 class="content__item-title">¿QUÉ SOMOS?</h3>
                 <span class="page-subtitle">RAMA IEEE UD</span>
             </div>
             <h3 class="content__item-subtitle">¿Qué significa RAMA IEEE UD?</h3>
             <div class="content__item-text">
 
-                <h4> ¿Que es IEEE? </h4>
-                <p> El Instituto de Ingenieros Eléctricos y Electrónicos(IEEE) es la organización profesional técnica
-                    más
-                    grande del mundo dedicada al avance de la tecnología en beneficio de la humanidad. Aprenda más sobre
-                    IEEE <a href="https://www.ieee.org/about/index.html">aquí</a>. </p>
+                <h1>¿Qué es IEEE? </h1>
 
-
-                <h4> ¿Que es una Rama Estudiantil? </h4>
-                <p> Una rama estudiantil es un grupo de estudiantes interesados en las actividades del IEEE, que se
-                    compromete a servir a la comunidad estudiantil de la misma manera que el IEEE sirve a la comunidad
-                    profesional. Son realizados íntegramente por miembros estudiantes, con el apoyo de algunos
-                    profesores y graduados, que colaboran en la organización de algunas actividades.
-
-                    Los objetivos de una rama estudiantil son puramente académicos y educativos. Como consecuencia
-                    natural, las Ramas Estudiantiles están orientadas a organizar actividades de aprendizaje técnico,
-                    que tienden a promover el conocimiento de sus miembros y a fomentar un clima de excelencia
-                    académica, tanto dentro como fuera de la Universidad.
+                <div>
+                    <img class="container" src="img/In/Logo IEEE.png" alt="">
+                </div>
+                <p style="text-align: justify;"> El Instituto de Ingenieros Eléctricos y Electrónicos(IEEE) es la organización profesional técnica más grande del mundo dedicada al avance de la tecnología en beneficio de la humanidad. Aprenda más sobre IEEE <a href="https://www.ieee.org/about/index.html">aquí</a>.
                 </p>
 
-                <h4> Universidad Distrital Francisco Jose de Caldas </h4>
-                <p> La Universidad Distrital Francisco José de Caldas es una universidad pública de Bogotá, en Colombia,
-                    sujeta a inspección y vigilancia por medio de la Ley 1740 de 2014 y la ley 30 de 1992 del Ministerio
-                    de Educación de Colombia. Su nombre alude a Francisco José de Caldas, figura de la independencia de
-                    la Nueva Granada.<br>
-                    La Facultad de Ingeniería de la Universidad Distrital Francisco José de Caldas, vela por la
-                    excelencia académica en el marco de la autonomía universitaria que la ley le permite, autonomía que
-                    se ejerce también para construir una tradición y una identidad para abordar y aportar al desarrollo
-                    de la ciencia, la cultura y la sociedad, y se fundamente en construir sus propios desarrollos de
-                    conocimiento, sus métodos de trabajo investigativo y docente.</p>
+                <div>
+                    <h1> ¿Qué es una Rama Estudiantil? </h1>
+                    <img class="container" src="img/In/Bander-01.png" alt="">
+                    <p style="text-align:justify"> Una rama estudiantil es un grupo de estudiantes interesados en las actividades del IEEE, que se compromete a servir a la comunidad estudiantil de la misma manera que el IEEE sirve a la comunidad profesional. Son realizados íntegramente
+                        por miembros estudiantes, con el apoyo de algunos profesores y graduados, que colaboran en la organización de algunas actividades. Los objetivos de una rama estudiantil son puramente académicos y educativos. Como consecuencia natural,
+                        las Ramas Estudiantiles están orientadas a organizar actividades de aprendizaje técnico, que tienden a promover el conocimiento de sus miembros y a fomentar un clima de excelencia académica, tanto dentro como fuera de la Universidad.
+                    </p>
+                </div>
+                <h1> Universidad Distrital Francisco José de Caldas </h1>
+                <img class="container" src="img/In/universidad.png" alt="">
+                <p style="text-align:justify"> La Universidad Distrital Francisco José de Caldas es una universidad pública de Bogotá, en Colombia, sujeta a inspección y vigilancia por medio de la Ley 1740 de 2014 y la ley 30 de 1992 del Ministerio de Educación de Colombia. Su nombre
+                    alude a Francisco José de Caldas, figura de la independencia de La Nueva Granada.<br> La Facultad de Ingeniería de la Universidad Distrital Francisco José de Caldas, vela por la excelencia académica en el marco de la autonomía universitaria
+                    que la ley le permite, autonomía que se ejerce también para construir una tradición y una identidad para abordar y aportar al desarrollo de la ciencia, la cultura y la sociedad, y se fundamente en construir sus propios desarrollos
+                    de conocimiento, sus métodos de trabajo investigativo y docente.
+                </p>
             </div>
             <span id="logo">IEEE UD</span>
-            <button class="back-home" id="backHome1"><span class="legal">© 2019 IEEE UD</span>Pagina Inicio <img
+            <button class="back-home" id="backHome1"><span class="legal">© 2020 IEEE UD</span>Página Inicio <img
                     src="img/arrow-backlink.svg"></button>
 
         </div>
         <!-- QUIENES SOMOS -->
         <div class="content__item">
+
             <div class="content__item-intro">
                 <img class="content__item-img" src="img/2.jpg" alt="Some image" />
-                <h2 class="content__item-title">¿QUIENES SOMOS?</h2>
-                <span class="page-subtitle">Entera que significa "RAMA IEEE UD"</span>
+                <h2 class="content__item-title">¿QUIÉNES SOMOS?</h2>
+                <span class="page-subtitle">Enterate qué significa "RAMA IEEE UD"</span>
             </div>
-            <h3 class="content__item-subtitle">Aqui va el subtitulo</h3>
+
+            <h3 class="content__item-subtitle">CAPÍTULOS</h3>
+            <div id="acordeon">
+                <div class="subapartado">
+                    <div class="titulo">
+                        <p class="titulo">Circuits and Systems Society</p>
+                    </div>
+                    <div class="info">
+                        <p class="info">Promueve el desarrollo de proyectos con enfoque investigativo y social en las áreas de electrónica y eléctrica, lo cual permite generar un aprendizaje en temas a fines y fomenten un espíritu de búsqueda a favor de un crecimiento
+                            académico, personal, profesional y grupal como parte de la comunidad universitaria creando un impacto positivo en la sociedad.</p>
+                    </div>
+                </div>
+
+                <div class="subapartado">
+                    <div class="titulo">
+                        <p class="titulo">Engineering in Medicine and Biology Society</p>
+                    </div>
+                    <div class="info">
+                        <p class="info">Fomentar la investigación, innovación y desarrollo tecnológico y científico en el área de bioingeniería, así como promover un ambiente académico para estudiantes, profesionales y la comunidad en general, con el fin de desarrollar
+                            proyectos que resuelvan las necesidades y problemas de nuestra sociedad.</p>
+                    </div>
+                </div>
+                <div class="subapartado">
+
+                    <div class="titulo">
+                        <p class="titulo">Computer Society</p>
+                    </div>
+
+                    <div class="info">
+                        <p class="info">Brindar conocimiento y herramientas necesarias para desarrollar actividades relacionadas con el crecimiento personal, el avance investigativo y fomentar las capacidades en el área de los sistemas informáticos, tanto a estudiantes
+                            como a particulares interesados, proporcionado por los miembros activos del capítulo, con los conocimientos necesarios y métodos para transmitir esta información.</p>
+                    </div>
+
+                </div>
+
+                <div class="subapartado">
+                    <div class="titulo">
+                        <p class="titulo">Power & Energy Society</p>
+                    </div>
+                    <div class="info">
+                        <p class="info">Fomentar y promover el desarrollo e investigación por parte de los miembros, voluntarios y comunidad universitaria, en diferentes áreas del sector energético para el crecimiento profesional y social.</p>
+                    </div>
+                </div>
+            </div>
             <div class="content__item-text">
-                Aqui va el contenido.
+                <!--acordeon-->
+
+                <p style="text-align: justify;">Como estudiantes de la Universidad Distrital Francisco José de Caldas, somos parte de la organización internacional sin ánimo de lucro IEEE (Institute of Electrical and Electronics Engineers, Inc.) por sus siglas en inglés. En cabeza de
+                    Danna García Hernández, como presidenta para el año 2020 y estudiante de ingeniería eléctrica, creemos en un aporte solido a la sociedad por medio de la tecnología, la innovación y la investigación. Cuyo impacto es cada vez mayor en
+                    la sociedad, todo esto incentivando y atrayendo a todos y cada uno de los sectores y/o grupos que conforman nuestra comunidad.
+
+                </p>
             </div>
             <span id="logo">IEEE UD</span>
-            <button class="back-home" id="backHome1"><span class="legal">© 2019 IEEE UD</span>Pagina Inicio <img
+            <button class="back-home" id="backHome1"><span class="legal">© 2020 IEEE UD</span>Página Inicio <img
                     src="img/arrow-backlink.svg"></button>
 
         </div>
@@ -308,49 +343,61 @@
             </div>
             <h3 class="content__item-subtitle">Nuestra rama busca...</h3>
             <div class="content__item-text">
-                ● Promover espacios académicos que incentiven la investigación en áreas afines a la ingeniería
-                contribuyendo a la formación integral de profesionales competentes.
-                </br>
-                <div></div>>
-                </br>
-                ● Realizar proyectos académicos e investigativos que generen impacto positivo en la sociedad.
-                </br>
-                </br>
-                ● Organizar actividades técnicas, académicas y de formación personal que contribuyan a la formación
-                integral de profesionales competentes.
-                </br>
-                </br>
-                ● Fomentar la excelencia académica e intercambio de conocimiento tanto al interior de la Universidad
-                Distrital, como fuera de ella.
-                </br>
-                </br>
-                ● Participar en eventos técnicos y no técnicos que contribuyan a la formación integral de sus miembros.
-                </br>
-                </br>
-                ● Difundir y promover los beneficios de pertenecer al IEEE.
-                </br>
-                </br>
-                ● Fomentar la integración entre miembros estudiantiles y profesionales pertenecientes a IEEE.
-                </br>
-                </br>
+                <div class="text_info_in">
+                    ● Promover espacios académicos que incentiven la investigación en áreas afines a la ingeniería contribuyendo a la formación integral de profesionales competentes.
+                    </br>
+                    <div></div>
+                    </br>
+                    ● Realizar proyectos académicos e investigativos que generen impacto positivo en la sociedad.
+                    </br>
+                    </br>
+                    ● Organizar actividades técnicas, académicas y de formación personal que contribuyan a la formación integral de profesionales competentes.
+                    </br>
+                    </br>
+                    ● Fomentar la excelencia académica e intercambio de conocimiento tanto al interior de la Universidad Distrital, como fuera de ella.
+                    </br>
+                    </br>
+                    ● Participar en eventos técnicos y no técnicos que contribuyan a la formación integral de sus miembros.
+                    </br>
+                    </br>
+                    ● Difundir y promover los beneficios de pertenecer al IEEE.
+                    </br>
+                    </br>
+                    ● Fomentar la integración entre miembros estudiantiles y profesionales pertenecientes a IEEE.
+                    </br>
+                    </br>
+                </div>
             </div>
             <span id="logo">IEEE UD</span>
-            <button class="back-home" id="backHome1"><span class="legal">© 2019 IEEE UD</span>Pagina Inicio <img
+            <button class="back-home" id="backHome1"><span class="legal">© 2020 IEEE UD</span>Página Inicio <img
                     src="img/arrow-backlink.svg"></button>
 
         </div>
         <!-- DONDE SOMOS -->
         <div class="content__item">
+
             <div class="content__item-intro">
                 <img class="content__item-img" src="img/4.jpg" alt="Some image" />
-                <h2 class="content__item-title">¿DONDE ESTAMOS?</h2>
-                <span class="page-subtitle">Entera que significa "RAMA IEEE UD"</span>
+                <h2 class="content__item-title">¿DÓNDE ESTAMOS?</h2>
+                <span class="page-subtitle">Enterate qué significa "RAMA IEEE UD"</span>
             </div>
-            <h3 class="content__item-subtitle">Aqui va el subtitulo</h3>
-            <div class="content__item-text">
-            </div>
+            <h1 class="content__item-subtitle">Ubicanos en la Universidad Distrital, salon 402 Edificio Sabio Caldas</h1>
+            <section>
+                <div id="lugar-izq">
+
+                    <div id="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.55058106377848!2d-74.06541981668265!3d4.628086744182031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bc8e4f71681%3A0x3958367520cd3b3a!2sRama%20estudiantil%20IEEE%20Universidad%20Distr%C3%ADtal%20Francisco%20Jos%C3%A9%20de%20Caldas!5e0!3m2!1ses!2sco!4v1592576945240!5m2!1ses!2sco"
+                            width="540" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div id="lugar-der">
+                    <img src="img/In/salon.jpg" alt="Some image" />
+
+                </div>
+            </section>
+
             <span id="logo">IEEE UD</span>
-            <button class="back-home" id="backHome1"><span class="legal">© 2019 IEEE UD</span>Pagina Inicio <img
+            <button class="back-home" id="backHome1"><span class="legal">© 2020 IEEE UD</span>Página Inicio <img
                     src="img/arrow-backlink.svg"></button>
 
         </div>
@@ -359,14 +406,15 @@
             <div class="content__item-intro">
                 <img class="content__item-img" src="img/5.jpg" alt="Some image" />
                 <h2 class="content__item-title">NUESTRA HISTORIA</h2>
-                <span class="page-subtitle">Entera que significa "RAMA IEEE UD"</span>
+                <span class="page-subtitle">Enterate que significa "RAMA IEEE UD"</span>
             </div>
             <h3 class="content__item-subtitle">Aqui va el subtitulo</h3>
-            <div class="content__item-text">
-                Aqui va el contenido.
+            <div class="text_info_in">
+                La petición de establecer una Rama Estudiantil del IRE (Institute Radio Engineers) en la Universidad Distrital fue enviada el 12 de septiembre de 1962, gracias a la iniciativa del Profesor Kazys Gabriunas y del estudiante Fidel Francisco Rueda. En 1963
+                adoptó el nombre de IEEE al fusionarse asociaciones con el AIEE (American Institute of Electrical Engineers) y el IRE (Institute of Radio Engineers).
             </div>
             <span id="logo">IEEE UD</span>
-            <button class="back-home" id="backHome1"><span class="legal">© 2019 IEEE UD</span>Pagina Inicio <img
+            <button class="back-home" id="backHome1"><span class="legal">© 2020 IEEE UD</span>Página Inicio <img
                     src="img/arrow-backlink.svg"></button>
 
         </div>
@@ -374,15 +422,15 @@
         <div class="content__item">
             <div class="content__item-intro">
                 <img class="content__item-img" src="img/6.jpg" alt="Some image" />
-                <h2 class="content__item-title">¿PORQUE ESTAMOS?</h2>
-                <span class="page-subtitle">Entera que significa "RAMA IEEE UD"</span>
+                <h2 class="content__item-title">¿POR QUÉ ESTAMOS?</h2>
+                <span class="page-subtitle">Enterate que significa "RAMA IEEE UD"</span>
             </div>
             <h3 class="content__item-subtitle">Aqui va el subtitulo</h3>
             <div class="content__item-text">
                 Aqui va el contenido.
             </div>
             <span id="logo">IEEE UD</span>
-            <button class="back-home" id="backHome1"><span class="legal">© 2019 IEEE UD</span>Pagina Inicio <img
+            <button class="back-home" id="backHome1"><span class="legal">© 2020 IEEE UD</span>Página Inicio <img
                     src="img/arrow-backlink.svg"></button>
 
         </div>
@@ -390,28 +438,14 @@
         <div class="content__item">
             <div class="content__item-intro">
                 <img class="content__item-img" src="img/7.jpg" alt="Some image" />
-                <h2 class="content__item-title">UNETE</h2>
+                <h2 class="content__item-title">ÚNETE</h2>
                 <span class="page-subtitle">Haz parte de nuestro equipo.</span>
             </div>
             <h3 class="content__item-subtitle">Formulario de inscripción</h3>
             <div class="content__item-text">
-                <form method="post" name="myemailform" action="form-to-email.php">
-
-                    <p>Nombre completo: <input type="text" name="nombre"></p>
-
-                    <p>Codigo estudiantil: <input type="number" name="codigo"></p>
-
-                    <p>Correo electronico: <input type="text" name="email"></p>
-
-                    <p>Carrera a la que pertenece: <input type="text" name="carrera"></p>
-
-                    <p>Semestre: <input type="text" name="semestre"></p>
-
-                    <p><input type="submit" name="submit" value="Enviar"></p>
-                </form>
             </div>
             <span id="logo">IEEE UD</span>
-            <button class="back-home" id="backHome1"><span class="legal">© 2019 IEEE UD</span>Pagina Inicio <img
+            <button class="back-home" id="backHome1"><span class="legal">© 2020 IEEE UD</span>Página Inicio <img
                     src="img/arrow-backlink.svg"></button>
 
         </div>
@@ -427,7 +461,7 @@
                 aqui va el contenido
             </div>
             <span id="logo">IEEE UD</span>
-            <button class="back-home" id="backHome1"><span class="legal">© 2019 IEEE UD</span>Pagina Inicio <img
+            <button class="back-home" id="backHome1"><span class="legal">© 2020 IEEE UD</span>Página Inicio <img
                     src="img/arrow-backlink.svg"></button>
 
         </div>
