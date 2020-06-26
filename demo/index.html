@@ -442,7 +442,24 @@
                 <span class="page-subtitle">Haz parte de nuestro equipo.</span>
             </div>
             <h3 class="content__item-subtitle">Formulario de inscripción</h3>
-            <div class="content__item-text">
+            <div class="form-register">
+                <form method="post" name="myemailform" action="form-to-email.php">
+
+                    <input class="controls" type="text" name="Nombre" placeholder="Ingrese su Nombre completo">
+
+                    <input class="controls" type="text" name="Codigo" placeholder="Ingrese su Codigo estudiantil">
+
+                    <input class="controls" type="email" name="correo" placeholder="Ingrese su Correo electronico">
+
+                    <input class="controls" type="text" name="Carrera" placeholder="Ingrese su programa Curricular">
+
+                    <input class="controls" type="number" name="semestre" placeholder="Ingrese su Semestre en curso">
+
+                    <p> Estoy de acuerdo con <a href="">Terminos y Condiciones</a></p>
+
+                    <input class="botons" type="submit" name="submit" value="Enviar">
+
+                </form>
             </div>
             <span id="logo">IEEE UD</span>
             <button class="back-home" id="backHome1"><span class="legal">© 2020 IEEE UD</span>Página Inicio <img

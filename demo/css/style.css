@@ -18,6 +18,60 @@ ol {
     padding: 0;
 }
 
+
+/*formulario*/
+
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px;
+    font-size: 16px;
+}
+
+
+/*Fin formulario*/
+
 li {
     list-style-type: none;
     list-style: none;
@@ -947,7 +1001,17 @@ b {
 
 @media screen and (min-width: 320px) {
     #contact .addresse {
-        font-size: calc(16px + 8 * ((100vw - 320px) / 880));
+        font-family: 'titreRegular';
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #171717;
+        display: inline-block;
+    }
+    #contact .addresse {
+        font-size: 16px;
     }
 }
 
@@ -1146,7 +1210,17 @@ b {
 
 @media screen and (min-width: 1200px) {
     #pages .intro-p {
-        font-size: 31px;
+        font-size: 22px;
+    }
+    @media screen and (min-width: 320px) {
+        #pages .intro-p {
+            font-size: calc(22px + 9 * ((100vw - 320px) / 880));
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        #pages .intro-p {
+            font-size: 31px;
+        }
     }
 }
 
@@ -1230,15 +1304,18 @@ b {
 #pages .external-link {
     margin: 0 25%;
     font-family: 'titreRegular';
-    font-size: 23px;
+    font-size: 131px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #171717;
-    text-decoration: underline;
-    position: relative;
+    text-align: center;
+    margin: -25px 0;
+}
+
+#pages .table-large-custom .cell-big .external-link {
+    margin: 0;
     display: inline-block;
     text-align: left;
 }
@@ -1823,12 +1900,6 @@ b {
 }
 
 
-/*Formulario*/
-
-
-/*Fin Formulario*/
-
-
 /*Mapa*/
 
 #lugar-izq {
@@ -2320,7 +2391,7 @@ html.scrollVerticalCarte .intro {
 }
 
 .content__item-subtitle {
-    text-align: left;
+    text-align: center;
     font-size: 1.25rem;
     font-weight: normal;
     margin: 3rem auto;
@@ -2368,7 +2439,7 @@ html.scrollVerticalCarte .intro {
 }
 
 .content__item-text {
-    text-align: left;
+    text-align: justify;
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -2636,6 +2707,3 @@ html.scrollVerticalCarte #contact {
         height: 0 !important;
     }
 }
-
-
-/*# sourceMappingURL=style.css.map */
