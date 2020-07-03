@@ -18,60 +18,6 @@ ol {
     padding: 0;
 }
 
-
-/*formulario*/
-
-.form-register {
-    width: 400px;
-    background: #24303c;
-    padding: 30px;
-    margin-top: 100px;
-    border-radius: 4px;
-    color: white;
-}
-
-.controls {
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-size: 18px;
-    color: white;
-}
-
-.form-register p {
-    color: white;
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-}
-
-.form-register a {
-    color: white;
-    text-decoration: none;
-}
-
-.form-register a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.form-register .botons {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px;
-    font-size: 16px;
-}
-
-
-/*Fin formulario*/
-
 li {
     list-style-type: none;
     list-style: none;
@@ -1941,6 +1887,107 @@ b {
 
 
 /*Fin mapa*/
+
+
+/*formulario*/
+
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px;
+    font-size: 16px;
+}
+
+
+/*Fin formulario*/
+
+
+/*Creditos*/
+
+.column {
+    float: left;
+    padding: 20px 10px;
+    text-align: center;
+    width: 25%;
+    height: 20%;
+    display: block;
+}
+
+.card {
+    padding: 10px;
+    padding-bottom: 50px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.column .card img {
+    display: block;
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.column .card img:hover {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.column .title__down {
+    text-align: center;
+    color: #5f636d;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*Fin creditos*/
 
 
 /*Acordeon*/
