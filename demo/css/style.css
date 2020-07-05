@@ -425,7 +425,7 @@ b {
 
 #logo {
     font-family: 'extra';
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
@@ -439,7 +439,7 @@ b {
 
 #contactZone {
     font-family: 'extra';
-    font-size: 12px;
+    font-size: 7px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
@@ -1892,12 +1892,14 @@ b {
 /*formulario*/
 
 .form-register {
-    width: 400px;
+    width: 50%;
     background: #24303c;
     padding: 30px;
-    margin-top: 100px;
+    margin-top: 5px;
+    margin-left: 300px;
     border-radius: 4px;
     color: white;
+    text-align: center;
 }
 
 .controls {
@@ -1911,13 +1913,6 @@ b {
     color: white;
 }
 
-.form-register p {
-    color: white;
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-}
 
 .form-register a {
     color: white;
@@ -1933,10 +1928,10 @@ b {
     width: 100%;
     background: #1f53c5;
     border: none;
-    padding: 12px;
+    padding: 10px;
     color: white;
-    margin: 16px;
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 25px;
 }
 
 
@@ -2170,7 +2165,7 @@ div.subapartado:hover div.info {
     bottom: -15px;
     margin: 0 0 0 1rem;
     transform-origin: 0 50%;
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'titreBold';
     color: black;
     z-index: 3;
