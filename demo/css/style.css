@@ -19,6 +19,13 @@
 /* Reset CSS
  * --------------------------------------- */
 
+/* condicionar al slidesNav para que el tamaño no presente inconvenientes, debido a su superposición */
+.fp-slidesNav {
+	width: 21vw;
+}
+
+
+
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
 	padding: 0;
 	margin: 0;
@@ -161,10 +168,12 @@ h1 {
 
 #section0 {
 	background-image: url(../img/fondos/Principal.jpg); 
+	background-size: 100% 100%; 
+	background-repeat: no-repeat;
 }
 
 .menu {
-	height: 97.8%;
+	height: 95.5%;
 	width: 170px;
 	position: fixed;
 	z-index: 1;
@@ -179,7 +188,11 @@ h1 {
 }
 
 .menu .home-lg {
-	height: 13%;
+	margin: 0 auto;
+	height: 90px;
+	width: 95px;
+	background :no-repeat center center;
+	background-size: 100% 100%;
 	opacity: 100%;
 }
 
@@ -313,6 +326,97 @@ h1 {
 
 /* ^Fin - tarjetas primer slide
   -------------------------------------------------------------------------------------*/
+/*  **********
+	 slider #4  
+	**********  */
+
+.slide-3 {
+	position: relative;
+}
+
+.slide-3  div  p{
+	text-align: left;
+	height: 80%;
+	overflow: auto;
+}
+
+.slide-3 div h1{
+	font-size: 4.5vh;
+}
+
+.slide-3  div{
+	font-size: 2.2vh;
+	box-sizing: border-box;
+	position: absolute;
+	height: 50%;
+	color : white;
+	padding : 1% 1% 2.5% 1%;
+}
+
+
+
+.slide-3 div button{
+	background: transparent;
+	font-size: 3.2vh;
+	border: .5vh white solid;
+	color: white;
+	height: 5.5vh;
+	width: 13vh;
+	position: absolute;
+	bottom: 2vh;
+	left: 43.5%;
+	z-index: 1;
+}
+
+
+.emeroteca{
+	background:	rgb(51,51,51);
+	width: 50%;
+	top: 0;
+	left: 0;
+}
+
+.membresia{
+	background: rgb(0, 179, 212);
+	width: 50%;
+	top: 0;
+	left: 50%;
+}
+
+.prestamo-sala{
+	background: rgb(0, 133, 212);
+	width: 50%;
+	bottom: 0;
+	left: 0%;
+}
+
+.slide-3 .prestamo-host {
+	background: #808080;
+	width: 25%;
+	bottom: 0;
+	left: 50%;
+}
+
+
+.slide-3 .casilleros {
+	color : rgb(51,51,51);
+	background: rgb(215, 215, 215);
+	width: 25%;
+	bottom: 0;
+	left: 75%;
+}
+
+.logo-cal{
+	height: 10vh;
+	width:  7vw;
+	position: absolute;
+	bottom: 3%;
+	right: 20%;
+	border-radius: 1vh 1vw;
+	background:white url(../img/logos/calendario.png) no-repeat center center;
+	background-size: 60% 70%;
+	cursor:pointer;
+}
 
 
 
