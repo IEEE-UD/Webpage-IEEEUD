@@ -50,6 +50,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/fullpage.min.css">
 	<script type="text/javascript" src="./js/library/jquery.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 
 </head>
 
@@ -217,13 +220,13 @@
 		<div class="section" id="section2">
 			<div class="latest-news">
 				<div class="title-news"></div>
-				<div class="container-news" id="container-news"> 
+				<div class="container-news" id="container-news">
 					<div id="news-1">
 						<div class="subnews-1"></div>
 						<div class="subnews-2"></div>
 						<div class="subnews-3">26 DE JULIO: 100% SRC</div>
 						<div class="subnews-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aperiam
-								illo in adipisci fuga nobis sapiente tenetur tempore nulla molestias!</div>
+							illo in adipisci fuga nobis sapiente tenetur tempore nulla molestias!</div>
 						<div class="subnews-5">Compartir</div>
 					</div>
 					<div id="news-2">
@@ -285,41 +288,63 @@
 		<!-- Inicio cuarta sección -->
 		<div class="section" id="section2" class="section4">
 			<div class="intro">
+				<div class="info-top">
+					<div class="info-left">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8091672313553!2d-74.06764674920805!3d4.6281098435537915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bc8e4f71681%3A0x3958367520cd3b3a!2sRama%20estudiantil%20IEEE%20Universidad%20Distr%C3%ADtal%20Francisco%20Jos%C3%A9%20de%20Caldas!5e0!3m2!1sen!2sco!4v1607700394173!5m2!1sen!2sco"
+							width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+							aria-hidden="false" tabindex="0"></iframe>
+					</div>
+					<div class="info-right">
+						<div class="formulario">
+							<h4 class="form-title" >CONTACTANOS</h4>
+							<form action="">
+								<label for="" class="form-lb" >Nombre</label>
+								<input type="text" class="form-input" >
+								<label for="" class="form-lb" >Email</label>
+								<input type="email" class="form-input" >
+								<label for="" class="form-lb" >Universidad</label>
+								<input type="text" class="form-input" >
+								<label for="" class="form-lb" >Proyecto Curricular</label>
+								<select name="grade" id="grade"  class="form-select">
+									<option value="ings">Ingenieria de sistemas</option>
+									<option value="ings">Ingenieria ambiental</option>
+									<option value="ings">Ingenieria catastral y geodesia</option>
+									<option value="ings">Ingenieria civil</option>
+									<option value="ings">Ingenieria de producción</option>
+									<option value="ings">Ingenieria eléctrica</option>
+									<option value="ings">Ingenieria electrónica</option>
+									<option value="ings">Ingenieria en control y automatización</option>
+									<option value="ings">Ingenieria en telecomunicaciones</option>
+									<option value="ings">Ingenieria en telemática</option>
+									<option value="ings">Ingenieria forestal</option>
+									<option value="ings">Ingenieria forestal</option>
+								</select>
+								<label for="">Mensaje</label>
+								<textarea  class="form-message" name="" id="" cols="30" rows="10">
 
-				<div class="map">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.1011496592852!2d-74.06572628758035!3d4.628104496637966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bc8e4f71681%3A0x3958367520cd3b3a!2sRama%20estudiantil%20IEEE%20Universidad%20Distr%C3%ADtal%20Francisco%20Jos%C3%A9%20de%20Caldas!5e0!3m2!1sen!2sco!4v1607014146667!5m2!1sen!2sco"
-						width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-						aria-hidden="false" tabindex="0"></iframe>
+								</textarea>
+								<button>Enviar</button>
+							</form>
+						</div>
+						
+					</div>
 				</div>
-				<div class="contact">
-					<form action="">
-						<input type="text" placeholder="Nombre">
-						<input type="email" placeholder="Email">
-						<label for="grade">Proyecto curricular</label><select name="grade" id="grade">
-							<option value="ings">Ingenieria de sistemas</option>
-							<option value="ings">Ingenieria ambiental</option>
-							<option value="ings">Ingenieria catastral y geodesia</option>
-							<option value="ings">Ingenieria civil</option>
-							<option value="ings">Ingenieria de producción</option>
-							<option value="ings">Ingenieria eléctrica</option>
-							<option value="ings">Ingenieria electrónica</option>
-							<option value="ings">Ingenieria en control y automatización</option>
-							<option value="ings">Ingenieria en telecomunicaciones</option>
-							<option value="ings">Ingenieria en telemática</option>
-							<option value="ings">Ingenieria forestal</option>
-							<option value="ings">Ingenieria forestal</option>
 
+				<div class="info-bot">
+					<footer>
+						<h3 class="footer-title">IEEE UD</h3>
+						<a href=""><i class="fab fa-facebook-f"></i></a>
+						<a href=""><i class="fab fa-instagram"></i></a>
+						<a href=""><i class="fab fa-linkedin-in"></i></a>
+						<p>
+							<a href="" class="footer-a" >Desarrolladores</a>
+						</p>
+						<p class="footer-p" > © 2020- IEEE UD</p>
 
-						</select>
-					</form>
+					</footer>
+
 				</div>
-
-				<div class="footer">
-					Hola
-				</div>
-
-
 			</div>
 		</div>
 		<!-- Fin cuarta sección -->
