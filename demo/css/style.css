@@ -465,6 +465,7 @@ h1 {
 	transition-delay: 0s;
 	box-shadow: 0 0 1vh 0.2vh rgb(150, 150, 150);
 	color:rgb(110, 110, 110);
+	border-radius: 2vh;
 }
 
 
@@ -499,6 +500,7 @@ h1 {
 	width: 100%;
 	background: url("../img/fondos/fondo.jpg") no-repeat center center;
 	background-size: 100% 100%;
+	border-radius: 2vh 0;
 } 
 
 .subnews-2{
@@ -524,6 +526,7 @@ h1 {
 	padding: 1% 2%;
 	height: 3%;
 	width: 96%;
+	border-radius: 0 2vh;
 }
 /****/
 
