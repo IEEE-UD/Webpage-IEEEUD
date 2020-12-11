@@ -420,6 +420,113 @@ h1 {
 		cursor: pointer;
 	}
 
+/******/
+
+/*****************************************************************
+	Comienzo slider 5
+	*************************************************************/
+.latest-news{
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	Background: white;
+	
+}
+
+.title-news{
+	position:absolute;
+	height: 17%;
+	width: 40%;
+	background: url("../img/logos/latesnews.jpg") no-repeat center center;
+	background-size: 100% 100%; 
+	top: 0;
+	right: 15%;
+}
+
+.container-news{
+	position: absolute;
+	height: 70%;
+	width: 80%;
+	background: white;
+	bottom: 5%;
+	left: 10%;
+	overflow-x: hidden;
+}
+
+.container-news > div{
+	left: 0;
+	top: 0;
+	position: absolute;
+	height: 96%;
+	width: 30.66666%;
+	margin: 1%;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-delay: 0s;
+	box-shadow: 0 0 1vh 0.2vh rgb(150, 150, 150);
+	color:rgb(110, 110, 110);
+}
+
+
+.derecha, .izquierda{
+	position: absolute;
+	top: 50vh;
+}
+
+.derecha{
+	right: 5% ;
+	height: 14vh;
+	width: 7vh;
+	border-bottom-right-radius: 12vh;
+	border-top-right-radius: 12vh;
+	background: rgb(150, 150, 150);
+}
+
+.izquierda{
+	left: 5%;
+	height: 14vh;
+	width: 7vh;
+	border-bottom-left-radius: 12vh;
+	border-top-left-radius: 12vh;
+	background: rgb(150, 150, 150);
+}
+
+.subnews-2::before {
+	content: "Autor";
+}
+.subnews-1 {
+	height: 50%;
+	width: 100%;
+	background: url("../img/fondos/fondo.jpg") no-repeat center center;
+	background-size: 100% 100%;
+} 
+
+.subnews-2{
+	padding: 1% 2%;
+	height: 4%;
+	width: 96%;
+}
+.subnews-3{
+	color: #111;
+	padding: 1% 2%;
+	height: 8%;
+	width: 96%;
+}
+
+.subnews-4{
+	padding: 1% 2%; 
+	text-align: left;
+	height: 28%;
+	width: 96%;
+}
+.subnews-5{
+	cursor: pointer;
+	padding: 1% 2%;
+	height: 3%;
+	width: 96%;
+}
+/****/
+
 /* ^Fin - Eventos
 -------------------------------------------------------------------------------------*/
 
