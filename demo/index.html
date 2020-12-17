@@ -59,6 +59,12 @@
 
 
 <body>
+	<div class="onloadScroll" id="onloadScroll">
+		<div class="mouseScroll">
+			<div id="mouseScroll">
+			</div>
+		</div>
+	</div>
 
 	<div id="myContainer">
 		<!-- Contenedor de todas las secciones -->
@@ -351,6 +357,7 @@
 	</div>
 
 	<!-- Scripts -->
+	<script type="text/javascript" src="js/dev/loader.js"></script>
 	<script src="./js/dev/flex.js"></script>
 	<script src="./js/dev/sidebar.js"></script>
 	<script src="js/dev/latestNews.js"></script>
@@ -371,6 +378,7 @@
 				menu: '#menu',
 				slidesNavigation: true,
 				scrollHorizontally: true,
+				scrollingSpeed: 1000,
 				//scrollHorizontallyKey: 'YWx2YXJvdHJpZ28uY29tX01mU2MyTnliMnhzU0c5eWFYcHZiblJoYkd4NVNRcg==',
 				afterSlideLoad: function (section, origin, destination, direction) {
 					console.log({
