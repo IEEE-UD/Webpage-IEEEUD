@@ -623,3 +623,46 @@ h1 {
 }
 /* /^^Fin - Contacto y footer
 -------------------------------------------------------------------------------------*/
+
+/**********
+	mouseScroll
+**********/
+.onloadScroll{
+	position: fixed;
+	height: 100vmax;
+	width: 100%;
+	background: rgb(51,51,51);
+	display: block;
+	opacity: 100%;
+	transition-property: all;
+	transition-duration: 0.7s;
+	transition-delay: 0;
+	z-index: 10;
+}
+
+
+.mouseScroll{
+	position: relative;
+	margin: 45vh auto;
+	height: 10vh;
+	width: 2.5vw;
+	border: whitesmoke solid 0.35vh;
+	border-radius: 3vh;
+	background: rgb(51, 51, 51);
+	transition-property: all;
+	transition-duration: 0.7s;
+	transition-delay: 0;
+}
+
+.mouseScroll > div{
+	position: relative;
+	height: 1.5vh;
+	width: 1.5vh;
+	border-radius: 0.75vh;
+	margin: 15% auto;
+	background: whitesmoke;
+	transition-property: all;
+	transition-duration: 0.7s;
+	transition-delay: 0;
+}
+
