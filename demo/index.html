@@ -424,14 +424,11 @@
 						<div class="formulario">
 							<h4 class="form-title" >CONTACTANOS</h4>
 							<form action="">
-								<label for="" class="form-lb" >Nombre</label>
-								<input type="text" class="form-input" >
-								<label for="" class="form-lb" >Email</label>
-								<input type="email" class="form-input" >
-								<label for="" class="form-lb" >Universidad</label>
-								<input type="text" class="form-input" >
+								<input name="nombre" placeholder="Nombre Completo" type="text" class="controls" >
+								<input name="email" placeholder="Correo Electronico" type="email" class="controls" >
+								<input name="universidad" placeholder="Universidad / Organización" type="text" class="controls" >
 								<label for="" class="form-lb" >Proyecto Curricular</label>
-								<select name="grade" id="grade"  class="form-select">
+								<select name="grade" id="grade"  class="controls">
 									<option value="ings">Ingenieria de sistemas</option>
 									<option value="ings">Ingenieria ambiental</option>
 									<option value="ings">Ingenieria catastral y geodesia</option>
@@ -444,12 +441,13 @@
 									<option value="ings">Ingenieria en telemática</option>
 									<option value="ings">Ingenieria forestal</option>
 									<option value="ings">Ingenieria forestal</option>
+									<option value="ings">Otra</option>
 								</select>
 								<label for="">Mensaje</label>
-								<textarea  class="form-message" name="" id="" cols="30" rows="10">
-
+								<textarea  class="form-message" name="" id="" cols="30" rows="5">
 								</textarea>
-								<button>Enviar</button>
+
+								<input class="botons" type="submit" name="submit" value="Enviar" onClick="clickOnEvent();">
 							</form>
 						</div>
 
