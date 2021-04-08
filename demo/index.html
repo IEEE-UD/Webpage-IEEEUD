@@ -1,523 +1,1250 @@
 <!DOCTYPE html>
 <html lang="es">
-
-
-<html lang="es" class="fp-enabled" style="overflow: hidden; height: 100%;">
-
 <head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138955736-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="Inovatik">
 
-		gtag('config', 'UA-138955736-1');
-	</script>
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
 
-	<meta charset="utf-8">
-	<link rel="shortcut icon" type="image/png" href="./img/logos/favicon.ico" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<link rel="stylesheet" type="text/css" href="./css/style.css"> <!-- En esta estilos nuevos -->
+    <!-- Website Title -->
+    <title>IEEE Universidad Distrital Demo</title>
 
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="theme-color" content="#ffffff">
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<title>IEEE UD</title>
-
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta property="og:type" content="website">
-	<meta property="og:description" content="IEEE UD">
-	<meta property="og:image" content="https://dev.studio-dot.fr/mmi/img/thumbnail.jpg">
-	<meta property="og:url" content="https://ieee.udistrital.edu.co/">
-	<meta property="og:title" content="Rama IEEE Universidad Distrital">
-	<meta name="description" content="IEEE UDISTRITAL">
-
-	<script>
-		document.documentElement.className = "js";
-		var supportsCssVars = function () {
-			var e, t = document.createElement("style");
-			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
-		};
-		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-	</script>
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/fullpage.min.css">
-	<script type="text/javascript" src="./js/library/jquery.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/slideshowCapitulos.css">
-	<script src="js/slideshowCapitulos.js"></script>
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
 </head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
 
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
-<body>
-	<div class="onloadScroll" id="onloadScroll">
-		<div class="mouseScroll">
-			<div id="mouseScroll">
-			</div>
-		</div>
-	</div>
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/Rama.png" alt="alternative"></a>
 
-	<div id="myContainer">
-		<!-- Contenedor de todas las secciones -->
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
 
-		<!-- Inicio primera seccion -->
-		<div class="section active" id="section0">
-			<nav class="menu">
-				<img class="home-lg" src="./img/logos/icono rama.ico" alt="icono rama">
-				<h1>IEEE UD</h1>
-				<a class="menu-item" href="#section0" id="inicio">INICIO</a>
-				<hr>
-				<a class="menu-item" href="#secondPage">Acerca de nosotros</a>
-				<a class="dropdown-btn menu-item">Eventos
-					<i class="fa fa-caret-down"></i>
-				</a>
-				<div class="dropdown-container">
-					<a class="menu-item" href="#events">Talleres</a>
-					<a class="menu-item" href="#events">Cursos</a>
-					<a class="menu-item" href="#events">Conferencias</a>
-				</div>
-				<a class="menu-item" href="#services">Servicios</a>
-				<a class="menu-item" href="#news">Noticias</a>
-				<a class="menu-item" href="#contact">Contacto</a>
-			</nav>
-		</div>
-		<!-- Fin primera seccion -->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">Hogar <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#intro">Intro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#services">Capitulos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#callMe">Únete</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#projects">Eventos</a>
+                </li>
 
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Acerca de</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Terminos y condiciones</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Politica de privacidad</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
 
-		<!-- Inicio seccion de slides -->
-		<div class="section" id="section1">
-
-			<!-- Inicio primre slide -->
-			<div class="slide" id="slide1">
-				<div class="intro">
-					<div class="panels">
-						<div class="panel panel1">
-							<p></p>
-							<p class="panels-title">Quienes somos</p>
-							<p class="panels-p">Como estudiantes de la Universidad Distrital Francisco José de Caldas, Bogotá, Colombia;
-								 Somos parte de la organización internacional sin ánimo de lucro IEEE (Institute of
-								Electrical and Electronics Engineers, Inc.) por sus siglas en inglés. En cabeza de
-								Nicolas Pereira, como presidente para el año 2021 y estudiante de ingeniería
-								eléctrica.</p>
-						</div>
-						<div class="panel panel2">
-							<p></p>
-							<p class="panels-title">Qué es IEEE</p>
-							<p class="panels-p">La rama estudiantil IEEE es un grupo de estudiantes interesados en las
-								actividades del IEEE, que se compromete a servir a la comunidad estudiantil de la misma
-								manera que el IEEE sirve a la comunidad profesional. Estamos conformados íntegramente
-								por estudiantes universitarios, profesores y graduados, que colaboran
-								en la organización de actividades.
-
-							</p>
-						</div>
-						<div class="panel panel3">
-							<p></p>
-							<p class="panels-title">Qué Hacemos</p>
-							<p class="panels-p">Creemos en un aporte solido a la sociedad por medio de la tecnología, la
-							innovación y la investigación, cuyo impacto es cada vez mayor en
-							la sociedad, todo esto incentivando y atrayendo a todos y cada uno de los sectores y/o
-							grupos que conforman nuestra comunidad.</p>
-						</div>
-						<div class="panel panel4">
-							<p></p>
-							<p class="panels-title">Desde 1962</p>
-							<p class="panels-p">La petición de establecer una Rama Estudiantil del IRE (Institute Radio Engineers)
-								en la Universidad Distrital fue enviada el 12 de septiembre de 1962, gracias a la iniciativa del Profesor
-								Kazys Gabriunas y del estudiante Fidel Francisco Rueda. En 1963 adoptó el nombre de IEEE al fusionarse
-								asociaciones con el AIEE (American Institute of Electrical Engineers) y el IRE (Institute of Radio Engineers).</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Fin primer slide -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Contacto</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/ieeeUdistrital" target="_blank">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
 
 
-			<!-- Inicio segundo slide -->
-			<div class="slide" id="slide2">
-
-				<div class="grid-container">
-				  <div class="item1">
-					<a class="arriba1" onclick="plusSlidesBox(0)">congresos</a>
-					  <a class="arriba2" onclick="plusSlidesBox(1)">cursos</a>
-					  <a class="arriba3" onclick="plusSlidesBox(2)">foros</a>
-					  <a class="arriba4" onclick="plusSlidesBox(3)">otros</a>
-
-				  </div>
-				  <div class="item2">
-					<!-- Slideshow container -->
-					<div class="slideshow-container">
-
-						  <!-- Full-width images  -->
-						  <div class="mySlides1 fade">
-							<img src="img/slideshowCapitulos/img1.jpg" style="width:100%">
-						  </div>
-
-						  <div class="mySlides1 fade">
-							<img src="img/slideshowCapitulos/img2.jpg" style="width:100%">
-						  </div>
-
-						  <div class="mySlides1 fade">
-							<img src="img/slideshowCapitulos/img3.jpg" style="width:100%">
-						  </div>
-
-						  <div class="mySlides1 fade">
-							<img src="img/slideshowCapitulos/img4.jpg" style="width:100%">
-						  </div>
-
-						  <!-- Slideshow container 2 -->
-
-						  <!-- Full-width images -->
-						  <div class="mySlides2 fade">
-							<img src="img/slideshowCapitulos/img5.jpg" style="width:100%">
-						  </div>
-
-						  <div class="mySlides2 fade">
-							<img src="img/slideshowCapitulos/img6.jpg" style="width:100%">
-						  </div>
-
-						  <div class="mySlides2 fade">
-							<img src="img/slideshowCapitulos/img7.jpg" style="width:100%">
-						  </div>
-
-						   <!-- Slideshow container 3 -->
-
-						  <!-- Full-width images -->
-						  <div class="mySlides3 fade">
-							<img src="img/slideshowCapitulos/img8.jpg" style="width:100%">
-						  </div>
-
-						  <div class="mySlides3 fade">
-							<img src="img/slideshowCapitulos/img9.jpg" style="width:100%">
-						  </div>
-
-						   <!-- Slideshow container 4 -->
-
-						  <!-- Full-width images -->
-						  <div class="mySlides4 fade">
-							<img src="img/slideshowCapitulos/img10.jpg" style="width:100%">
-						  </div>
-
-						  <div class="mySlides4 fade">
-							<img src="img/slideshowCapitulos/img11.jpg" style="width:100%">
-						  </div>
-						  <!-- Next and previous buttons -->
-						  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>SOMOS <span id="js-rotating">UNA FAMILIA,UN EQUIPO,IEEE UD</span></h1>
+                            <p class="p-heading p-large">Somos la rama IEEE de la Universidad Distrital Francisco José de Caldas, pertenecientes a la Region 9 - Latinoamerica, dentro del Instituto de Ingenieros Electricos y Electronicos</p>
+                            <a class="btn-solid-lg page-scroll" href="#intro">Descubre más</a>
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
 
 
-						  <script>showSlides(slideIndex, slideBoxIndex);</script>
-
-						</div>
-				  </div>
-
-				  <div class="item4">
-
-							<p id="contador">Proximo Evento</p>
-							<p id="demo"></p>
-							<script>
-							 // Set the date we're counting down to
-							var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-
-							// Update the count down every 1 second
-							var x = setInterval(function() {
-
-							  // Get today's date and time
-							  var now = new Date().getTime();
-
-							  // Find the distance between now and the count down date
-							  var distance = countDownDate - now;
-
-							  // Time calculations for days, hours, minutes and seconds
-							  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-							  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-							  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-							  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-							  // Output the result in an element with id="demo"
-							  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-							  + minutes + "m " + seconds + "s ";
-
-							  // If the count down is over, write some text
-							  if (distance < 0) {
-								clearInterval(x);
-								document.getElementById("demo").innerHTML = "EXPIRED";
-							  }
-							}, 1000);
-							</script>
-
-				  </div>
-
-				  <div class="item3">
-					<!-- <img src="img/slideshowCapitulos/calendario.jpg" width="80%" height="80%" > -->
-					<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FBogota&amp;src=MXU4ZG84ZmYxMjVvZWRkdmM4OXY0YjY3aG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Y2xhc3Nyb29tMTE3ODg1ODU3NTg3NzE2NDgzNjAyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Y2xhc3Nyb29tMTAwNzU0MDE2ODU1NTc3MjY2MDkxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZXMuY28jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Y2xhc3Nyb29tMTA4MjQ3MTYzODgyMjgxMzExMzE3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Y2xhc3Nyb29tMTA4ODk1MzUxMzIyNzM0Njc1NjU1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23B39DDB&amp;color=%23b80672&amp;color=%230047a8&amp;color=%230B8043&amp;color=%237627bb&amp;color=%230047a8" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-				  </div>
+    <!-- Intro -->
+    <div id="intro" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <div class="section-title">IEEE UD</div>
+                        <h2>Estamos para ti</h2>
+                        <p>Toma el siguiente paso y vive una experiencia más allá de la académica, en la cual podrás aplicar las habilidades que aprendas dentro y fuera del aula para que puedas liderar e impactar el mundo que te rodea. Aprovecha de todos los beneficios que IEEE tiene para ti y haz nuevos amigos que aportarán a tu futuro profesional.</p>
+                        <p class="testimonial-text">"Creemos en un aporte solido a la sociedad por medio de la tecnología, la innovación y la investigación."</p>
+                        <div class="testimonial-author">Nicolas Pereira - Presidente 2021</div>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/intro-office.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of intro -->
 
 
-				</div>
+    <!-- Description -->
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-binoculars fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Más de 55 Años</h4>
+                            <p>La llegada del hombre a la luna, la invención del Microprocesador Intel 4004, el lanzamiento del Telstar I y la primera transmisión de televisión vía satélite fueron algunos de los sucesos que marcaron una década muy importante para nuestra sociedad y fue esta misma en la cual fue fundada nuestra rama.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-list-alt fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Vivencias</h4>
+                            <p>Asombrosos Viajes, conferencias inigualables, anécdotas únicas y todos los acontecimientos en un solo lugar.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-chart-pie fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Somos un equipo</h4>
+                            <p>Como equipo compartimos un mismo objetivo: Contribuir al desarrollo profesional de estudiantes y de la comunidad educativa, brindando espacios para el desarrollo de liderazgo y trabajo interdisciplinar</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of description -->
 
 
-			</div>
-			<!-- Fin segundo slide -->
+    <!-- Services -->
+    <div id="services" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">Capitulos</div>
+                    <h2>Nuestras sociedades tecnicas<br>dentro de la rama IEEE</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/services-1.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Robotics and Automation Systems (RAS)</h3>
+                            <p>información de RAS</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Info</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Info</div>
+                                </li>
+                            </ul>
+                            <p class="price">Únete <span>Ahora</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#callMe">DETALLES</a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/services-2.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Computer Society (CS)</h3>
+                            <p>información de Computer</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Info</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Info</div>
+                                </li>
+                            </ul>
+                            <p class="price">Únete <span>Ahora</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#callMe">DETALLES</a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/services-3.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Aerospace and Electronics Systems (AESS)</h3>
+                            <p>información de AESS</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Info</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Info</div>
+                                </li>
+                            </ul>
+                            <p class="price">Únete <span>Ahora</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#callMe">DETALLES</a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of services -->
 
 
-			<!-- Inicio tercer slide ** Actualizada * JJ-->
-			<div class="slide slide-3" id="slide3">
-				<div class="emeroteca">
-					<h1>Emeroteca</h1>
-					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed beatae temporibus aperiam!
-						Quaerat ad porro quia corrupti adipisci neque. Repudiandae.
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed beatae temporibus aperiam!
-						Quaerat ad porro quia corrupti adipisci neque. Repudiandae.
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed beatae temporibus aperiam!
-						Quaerat ad porro quia corrupti adipisci neque. Repudiandae.
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed beatae temporibus aperiam!
-						Quaerat ad porro quia corrupti adipisci neque. Repudiandae.
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed beatae temporibus aperiam!
-						Quaerat ad porro quia corrupti adipisci neque. Repudiandae.
+    <!-- Details 1 -->
+	<div id="details" class="accordion">
+		<div class="area-1">
+		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
 
-					</p>
-					<button onClick="clickOnEvent();">
-						Mas...
-					</button>
-				</div>
-				<div class="membresia">
-					<h1>Membresias</h1>
-					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed beatae temporibus aperiam!
-						Quaerat ad porro quia corrupti adipisci neque. Repudiandae.
-					</p>
-					<button onClick="clickOnEvent();">
-						Mas...
-					</button>
-				</div>
-				<div class="prestamo-sala" id="prestamo-sala">
-					<h1>Prestamo de sala</h1>
-					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed beatae temporibus aperiam!
-						Quaerat ad porro quia corrupti adipisci neque. Repudiandae.
-					</p>
-					<button onClick="clickOnEvent();">
-						Mas...
-					</button>
-					<img class="logo-cal" onclick="clickOnEvent()">
-					</img>
-				</div>
-				<div class="prestamo-host" id="prestamo-host">
-					<h2>Prestamo de equipos</h2>
-					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed beatae temporibus aperiam!
-						Quaerat ad porro quia corrupti adipisci neque. Repudiandae.
-					</p>
-					<button onClick="clickOnEvent();">
-						Mas...
-					</button>
-				</div>
-				<div class="casilleros" id="casilleros">
-					<h2>Casilleros</h2>
-					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed beatae temporibus aperiam!
-						Quaerat ad porro quia corrupti adipisci neque. Repudiandae.
-					</p>
-					<button onClick="clickOnEvent();">
-						Mas...
-					</button>
-				</div>
-			</div>
-			<!-- Fin tercer slide -->
+            <!-- Accordion -->
+            <div class="accordion-container" id="accordionOne">
+                <h2>Aportando lideres a la sociedad</h2>
+                <div class="item">
+                    <div id="headingOne">
+                        <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">
+                            <span class="circle-numbering">1</span><span class="accordion-title">Promoviendo el desarrollo de la investigación e innovación</span>
+                        </span>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
+                        <div class="accordion-body">
+                             Voluntarios comprometidos con sus labores, lo que nos lleva a ser reconocidos como una de las ramas más sobresalientes a nivel nacional, regional y mundial.
+                        </div>
+                    </div>
+                </div> <!-- end of item -->
 
-		</div>
-		<!-- Fin sección de slides -->
+                <div class="item">
+                    <div id="headingTwo">
+                        <span class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
+                            <span class="circle-numbering">2</span><span class="accordion-title">Premios y Reconocimientos</span>
+                        </span>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
+                        <div class="accordion-body">
+                              Desde su fundación, la rama estudiantil IEEE de la Universidad Distrital ha recibibo una gran cantidad de reconocimientos por el trabajo que ha realizado en pro del desarrollo de la tecnología y en la formación de líderes que han hecho grandes cosas en nombre del IEEE.
+                        </div>
+                    </div>
+                </div> <!-- end of item -->
+
+                <div class="item">
+                    <div id="headingThree">
+                        <span class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
+                            <span class="circle-numbering">3</span><span class="accordion-title">Pertenecientes a la Universidad Distrital Francisco José de Caldas</span>
+                        </span>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionOne">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div> <!-- end of item -->
+            </div> <!-- end of accordion-container -->
+            <!-- end of accordion -->
+
+		</div> <!-- end of area-2 -->
+    </div> <!-- end of accordion -->
+    <!-- end of details 1 -->
 
 
-		<!-- Inicio tercer seccion -->
-		<div class="section" id="section2">
-			<div class="latest-news">
-				<div class="title-news"></div>
-				<div class="container-news" id="container-news">
-					<div id="news-1">
-						<div class="subnews-1"></div>
-						<div class="subnews-2"></div>
-						<div class="subnews-3">26 DE JULIO: 100% SRC</div>
-						<div class="subnews-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aperiam
-							illo in adipisci fuga nobis sapiente tenetur tempore nulla molestias!</div>
-						<div class="subnews-5">Compartir</div>
-					</div>
-					<div id="news-2">
-						<div class="subnews-1"></div>
-						<div class="subnews-2"></div>
-						<div class="subnews-3"></div>
-						<div class="subnews-4"></div>
-						<div class="subnews-5"></div>
-					</div>
-					<div id="news-3">
-						<div class="subnews-1"></div>
-						<div class="subnews-2"></div>
-						<div class="subnews-3"></div>
-						<div class="subnews-4"></div>
-						<div class="subnews-5"></div>
-					</div>
-					<div id="news-4">
-						<div class="subnews-1"></div>
-						<div class="subnews-2"></div>
-						<div class="subnews-3"></div>
-						<div class="subnews-4"></div>
-						<div class="subnews-5"></div>
-					</div>
-					<div id="news-5">
-						<div class="subnews-1"></div>
-						<div class="subnews-2"></div>
-						<div class="subnews-3"></div>
-						<div class="subnews-4"></div>
-						<div class="subnews-5"></div>
-					</div>
-					<div id="news-6">
-						<div class="subnews-1"></div>
-						<div class="subnews-2"></div>
-						<div class="subnews-3"></div>
-						<div class="subnews-4"></div>
-						<div class="subnews-5"></div>
-					</div>
-					<div id="news-7">
-						<div class="subnews-1"></div>
-						<div class="subnews-2"></div>
-						<div class="subnews-3"></div>
-						<div class="subnews-4"></div>
-						<div class="subnews-5"></div>
-					</div>
-					<div id="news-8">
-						<div class="subnews-1"></div>
-						<div class="subnews-2"></div>
-						<div class="subnews-3"></div>
-						<div class="subnews-4"></div>
-						<div class="subnews-5"></div>
-					</div>
-				</div>
-				<div class="derecha" id="derecha"></div>
-				<div class="izquierda" id="izquierda"></div>
-			</div>
-		</div>
-		<!-- Fin tercer seccion -->
+    <!-- Details 2 -->
+	<div class="tabs">
+        <div class="area-1">
+            <div class="tabs-container">
 
-		<!-- Inicio cuarta sección -->
-		<div class="section" id="section2" class="section4">
-			<div class="intro">
-				<div class="info-top">
-					<div class="info-left">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8091672313553!2d-74.06764674920805!3d4.6281098435537915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bc8e4f71681%3A0x3958367520cd3b3a!2sRama%20estudiantil%20IEEE%20Universidad%20Distr%C3%ADtal%20Francisco%20Jos%C3%A9%20de%20Caldas!5e0!3m2!1sen!2sco!4v1607700394173!5m2!1sen!2sco"
-							width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-							aria-hidden="false" tabindex="0"></iframe>
-					</div>
-					<div class="info-right">
-						<div class="formulario">
-							<h4 class="form-title" >CONTACTANOS</h4>
-							<form action="">
-								<input name="nombre" placeholder="Nombre Completo" type="text" class="controls" >
-								<input name="email" placeholder="Correo Electronico" type="email" class="controls" >
-								<input name="universidad" placeholder="Universidad / Organización" type="text" class="controls" >
-								<label for="" class="form-lb" >Proyecto Curricular</label>
-								<select name="grade" id="grade"  class="controls">
-									<option value="ings">Ingenieria de sistemas</option>
-									<option value="ings">Ingenieria ambiental</option>
-									<option value="ings">Ingenieria catastral y geodesia</option>
-									<option value="ings">Ingenieria civil</option>
-									<option value="ings">Ingenieria de producción</option>
-									<option value="ings">Ingenieria eléctrica</option>
-									<option value="ings">Ingenieria electrónica</option>
-									<option value="ings">Ingenieria en control y automatización</option>
-									<option value="ings">Ingenieria en telecomunicaciones</option>
-									<option value="ings">Ingenieria en telemática</option>
-									<option value="ings">Ingenieria forestal</option>
-									<option value="ings">Ingenieria forestal</option>
-									<option value="ings">Otra</option>
-								</select>
-								<label for="">Mensaje</label>
-								<textarea  class="form-message" name="" id="" cols="30" rows="5">
-								</textarea>
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i>Aptitudes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i>Destrezas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-th"></i>Atributos</a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
 
-								<input class="botons" type="submit" name="submit" value="Enviar" onClick="clickOnEvent();">
-							</form>
-						</div>
+                <!-- Tabs Content -->
+                <div class="tab-content" id="ariaTabsContent">
 
-					</div>
-				</div>
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <h4>Business Services For Companies</h4>
+                        <p>Aria provides the most innovative and customized business services in the industry. Our <a class="green page-scroll" href="#services">Services</a> section shows how flexible we are for all types of budgets.</p>
 
-				<div class="info-bot">
-					<footer>
-						<h3 class="footer-title">IEEE UD</h3>
-						<a href="https://www.facebook.com/ieeeUdistrital"><i class="fab fa-facebook-f"></i></a>
-						<a href="https://www.instagram.com/ieee.ud"><i class="fab fa-instagram"></i></a>
-						<a href="https://www.linkedin.com/company/ieee-ud/"><i class="fab fa-linkedin-in"></i></a>
-						<p>
-							<a href="" class="footer-a" >Desarrolladores</a>
-						</p>
-						<p class="footer-p" > © 2020 - IEEE UD</p>
+                        <!-- Progress Bars -->
+                        <div class="progress-container">
+                            <div class="title">Business Development 100%</div>
+                            <div class="progress">
+                                <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">Opportunity Spotting 76%</div>
+                            <div class="progress">
+                                <div class="progress-bar second" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">Online Marketing 90%</div>
+                            <div class="progress">
+                                <div class="progress-bar third" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div> <!-- end of progress-container -->
+                        <!-- end of progress bars -->
 
-					</footer>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
 
-				</div>
-			</div>
-		</div>
-		<!-- Fin cuarta sección -->
-	</div>
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <ul class="list-unstyled li-space-lg first">
+                            <li class="media">
+                                <div class="media-bullet">1</div>
+                                <div class="media-body"><strong>High quality</strong> is on top of our list when it comes to the way we deliver the services</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">2</div>
+                                <div class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">3</div>
+                                <div class="media-body"><strong>Quality standards</strong> are important but meant to be exceeded</div>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled li-space-lg last">
+                            <li class="media">
+                                <div class="media-bullet">4</div>
+                                <div class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">5</div>
+                                <div class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">6</div>
+                                <div class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
 
-	<!-- Scripts -->
-	<script type="text/javascript" src="js/dev/loader.js"></script>
-	<script src="./js/dev/flex.js"></script>
-	<script src="./js/dev/sidebar.js"></script>
-	<script src="js/dev/latestNews.js"></script>
-	<script type="text/javascript" src="./js/library/fullpage.scrollHorizontally.min.js"></script>
-	<script type="text/javascript" src="./js/library/fullpage.extensions.min.js"></script>
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a class="green" href="#your-link">with huge potential</a></p>
+                        <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a class="green" href="#your-link">the stakeholders</a></p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">It's easy to get a quotation, just call our office anytime</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">We'll get back to you with an initial estimate soon</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Get ready to see results even after only 30 days</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Ask for a quote and start improving your business</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Just fill out the form and we'll call you right away</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
 
-	<script type="text/javascript">
-		//para comprobar botones
-		function clickOnEvent() {
-			alert("hola mundo");
-		}
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
 
-		jQuery(function ($) {
+            </div> <!-- end of tabs-container -->
+        </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2"></div> <!-- end of area-2 -->
+    </div> <!-- end of tabs -->
+    <!-- end of details 2 -->
 
-			$('#myContainer').fullpage({
-				sectionsColor: ['#ff73a1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#ccc'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
-				menu: '#menu',
-				slidesNavigation: true,
-				scrollHorizontally: true,
-				scrollingSpeed: 1200,
-				//scrollHorizontallyKey: 'YWx2YXJvdHJpZ28uY29tX01mU2MyTnliMnhzU0c5eWFYcHZiblJoYkd4NVNRcg==',
-				afterSlideLoad: function (section, origin, destination, direction) {
-					console.log({
-						section: section,
-						origin: origin,
-						destination: destination,
-						direction: direction
-					});
-				},
-				onSlideLeave: function (section, origin, destination, direction) {
-					console.log({
-						section: section,
-						origin: origin,
-						destination: destination,
-						direction: direction
-					});
-				}
-			});
 
-		});
-	</script>
+    <!-- Testimonials -->
+    <div class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Testimonios IEEE </h2>
+                    <p class="p-heading">Nuestros miembros son nuestros amigos y no podríamos imaginar un futuro mejor para ellos sin ayudarles a alcanzar sus objetivos. </p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
 
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-1.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">The guys from Aria helped with getting my business off the ground and turning into a profitable company.</div>
+                                            <div class="testimonial-author">Jude Thorn - Founder</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </div>
+                                            <div class="testimonial-author">Marsha Singer - Marketer</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-3.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</div>
+                                            <div class="testimonial-author">Roy Smith - Developer</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</div>
+                                            <div class="testimonial-author">Ronald Spice - Owner</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-5.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</div>
+                                            <div class="testimonial-author">Lindsay Rune - Manager</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-6.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</div>
+                                            <div class="testimonial-author">Ann Black - Consultant</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of sliedr-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider -->
+    <!-- end of testimonials -->
+
+
+    <!-- Call Me -->
+    <div id="callMe" class="form-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <div class="section-title">Únete</div>
+                        <h2 class="white">Haz parte de la red profesional más grande del mundo</h2>
+                        <p class="white">Si quieres conocer acerca de los capítulos estudiantiles activos en la rama y ser un voluntario, ademas Si quieres adquirir mas beneficios por parte de IEEE, ser miembro de la organización, y formar parte de una comunidad de más de 425.000 profesionales, ingenieros y tecnólogos; puedes adquirir la membresía IEEE por un bajo costo y unirte a nosotros para trabajar por un objetivo en común: contínuo aprendizaje, colaboración e innovación.
+                          Si deseas obtener mayor información sobre la membresía IEEE y sus beneficios, te invitamos.</p>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Esto es muy facil, solo rellena el formulario y te escribiremos.</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Nos gustaria que formaras parte de nuestro equipo, no esperes más. </div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">No dudes en enviarnos un correo para cualquier pregunta o consulta.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Call Me Form -->
+                    <form id="callMeForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="lname" name="lname" required>
+                            <label class="label-control" for="lname">Nombre</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="lphone" name="lphone" required>
+                            <label class="label-control" for="lphone">Telefono</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="lemail" name="lemail" required>
+                            <label class="label-control" for="lemail">Correo</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control-select" id="lselect" required>
+                                <option class="select-option" value="" disabled selected>Interesado en...</option>
+                                <option class="select-option" value="Off The Ground">Robotics and Automation Systems Society</option>
+                                <option class="select-option" value="Accelerated Growth">Computer Society</option>
+                                <option class="select-option" value="Market Domination">Aerospace and Electronics Systems</option>
+                                <option class="select-option" value="EMB">Engineering in Medicine and Biology Society</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox white">
+                            <input type="checkbox" id="lterms" value="Agreed-to-Terms" name="lterms" required>Estoy de acuerdo con que la rama IEEE UD me contacte.</a>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">ENVIAR</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="lmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of call me form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of call me -->
+
+
+    <!-- Projects -->
+	<div id="projects" class="filter">
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">Eventos</div>
+                    <h2>Nuestros más grandes Eventos</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Filter -->
+                    <div class="button-group filters-button-group">
+                        <a class="button is-checked" data-filter="*"><span>RAMA</span></a>
+                        <a class="button" data-filter=".design"><span>RAS</span></a>
+                        <a class="button" data-filter=".development"><span>CS</span></a>
+                        <a class="button" data-filter=".marketing"><span>AESS</span></a>
+                        <a class="button" data-filter=".seo"><span>EMB</span></a>
+                    </div> <!-- end of button group -->
+                    <div class="grid">
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Online Banking</span></div><img src="images/project-1.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Classic Industry</span></div><img src="images/project-2.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing">
+                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>BoomBap Audio</span></div><img src="images/project-3.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing">
+                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Van Moose</span></div><img src="images/project-4.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing seo">
+                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Joy Moments</span></div><img src="images/project-5.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design marketing seo">
+                            <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span>Spark Events</span></div><img src="images/project-6.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design marketing">
+                            <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Casual Wear</span></div><img src="images/project-7.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design marketing">
+                            <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span>Zazoo Apps</span></div><img src="images/project-8.jpg" alt="alternative"></a>
+                        </div>
+                    </div> <!-- end of grid -->
+                    <!-- end of filter -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+		</div> <!-- end of container -->
+    </div> <!-- end of filter -->
+    <!-- end of projects -->
+
+
+    <!-- Project Lightboxes -->
+    <!-- Lightbox -->
+    <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Online Banking</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Classic Industry</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>BoomBap Audio</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-4.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Van Moose</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-5.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Joy Moments</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-6.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Spark Events</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-7.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Casual Wear</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-8.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Zazoo Apps</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of project lightboxes -->
+
+
+    <!-- Team -->
+    <div class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Nuestro Equipo</h2>
+                    <p class="p-heading">Sólo somos tan fuertes y tenemos tantos conocimientos como nuestro equipo. Así que aquí están los hombres y mujeres que guían a nuestros miembros y voluntarios a cumplir los objetivos y a hacer crecer nuestra RAMA.</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="images/team-1.png" alt="alternative">
+                        </div> <!-- end of image-wrapper -->
+                        <p class="p-large">John Whitelong</p>
+                        <p class="job-title">General Manager</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="images/team-2.png" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large">Veronique Smith</p>
+                        <p class="job-title">Business Developer</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="images/team-3.png" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large">Chris Zimerman</p>
+                        <p class="job-title">Online Marketer</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="images/team-4.png" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large">Mary Villalonga</p>
+                        <p class="job-title">Community Manager</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of team -->
+
+
+    <!-- About -->
+    <div id="about" class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xl-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/about.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7 col-xl-6">
+                    <div class="text-container">
+                        <div class="section-title">Acerca de nosotros</div>
+                        <h2>We're Passionate About Delivering Growth Services</h2>
+                        <p>Our goal is to provide the right business growth services at the appropriate time so companies can benefit from the created momentum and thrive for a long period of time</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Everything we recommend has direct positive impact</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">You will become an important partner of our company</div>
+                            </li>
+                        </ul>
+
+                        <!-- Counter -->
+                        <div id="counter">
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="231">1</div>
+                                <div class="counter-info">Happy<br>Users</div>
+                            </div>
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="122">1</div>
+                                <div class="counter-info">Issues<br>Solved</div>
+                            </div>
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="159">1</div>
+                                <div class="counter-info">Good<br>Reviews</div>
+                            </div>
+                        </div>
+                        <!-- end of counter -->
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of about -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <div class="section-title">Contactanos</div>
+                        <h2>Ponte en contacto mediante el formulario</h2>
+                        <p>Puedes pasar por nuestra oficina para tomar un café y utilizar el siguiente formulario de contacto para cualquier pregunta o consulta</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="address"><i class="fas fa-map-marker-alt"></i>Cra. 7 #40b-53, Salón 402 - Edificio Sabio Caldas, Facultad de Ingeniería, Bogotá, Colombia</li>
+                            <li><i class="fas fa-phone"></i><a href="tel:003024630820">+81 720 22 126</a></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:003024630820">+57 311 594 4726</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:ramaieeeud@udistrital.edu.co">ramaieeeud@udistrital.edu.co</a></li>
+                        </ul>
+                        <h3>Siguenos en nuestras redes sociales</h3>
+
+                        <span class="fa-stack">
+                            <a href="https://www.facebook.com/ieeeUdistrital" target="_blank">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-pinterest fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-behance fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Nombre</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Correo</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Tú mensaje</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>Estoy de acuerdo con la <a href="privacy-policy.html">Privacy Policy</a> y <a href="terms-conditions.html">Terms Conditions</a>.
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">ENVIAR MENSAJE</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container about">
+                        <h4>Algunas palabras de nuestra rama IEEE UD</h4>
+                        <p class="white">We're passionate about delivering the best business growth services for companies just starting out as startups or industry players that have established their market position a long tima ago.</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Links</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="/#Intro">Únete</a>
+                            </li>
+                            <li>
+                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Herramientas</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="#your-link">businessgrowth.com</a>
+                            </li>
+                            <li>
+                               <a class="white" href="#your-link">influencers.com</a>
+                            </li>
+                            <li class="media">
+                                <a class="white" href="#your-link">optimizer.net</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Nuestra red</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="#your-link">IEEE Mundial</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#your-link">IEEE Seccion Colombia</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#your-link">Universidad Distrital</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a> and <a href="https://ieee.udistrital.edu.co/"> IEEE UD</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
-
 </html>
