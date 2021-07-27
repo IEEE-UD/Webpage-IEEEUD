@@ -142,6 +142,7 @@ strong {
 .section-title {
 	color: #00B5E2;
 	font: 500 0.8125rem/1.125rem "Montserrat", sans-serif;
+	outline: none;
 }
 
 .btn-solid-reg {
